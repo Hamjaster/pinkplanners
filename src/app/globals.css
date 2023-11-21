@@ -2,26 +2,184 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding: 60px;
+  cursor: grab;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.navbar {}
+
+.navbar-white {
+  background: white;
+  color: black;
+  padding: 15px 0px !important
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s;
+  z-index: 2;
+  color: #df1d74;
+  border: 3px solid #df1d74;
+}
+
+/* Create the overlay with ::before */
+.card::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-color: #df1d74;
+  border-radius: 50% 50% 0 0;
+  transition: all 0.6s;
+  pointer-events: none;
+  /* Allow mouse events to pass through */
+}
+
+/* Show overlay on hover */
+.card:hover::before {
+  top: -100%;
+  z-index: -1;
+  /* Adjust the opacity as needed */
+}
+
+/* Additional styling for the card content */
+.card-content {
+  /* Other styles */
+}
+
+.about-img {
+  --s: 15px;
+  /* size of the frame */
+  --b: 2px;
+  /* border thickness */
+  --w: 500px;
+  /* width of the image */
+  --c: #df1d74;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background:
+    linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50%/var(--_i, 100%) 100% no-repeat;
+  /* outline: calc(var(--w)/2) solid #960043cc; */
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+
+.about-img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+
+.image-wrapper {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* Adjust the color as needed */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  /* Allow mouse events to pass through */
+}
+
+.image-wrapper:hover::after {
+  opacity: 0.4;
+  /* Adjust the opacity level when hovering */
+}
+
+.img-slider {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.one {
+  background-image: url('../../public/1.1.png');
+}
+
+.two {
+  background-image: url('../../public/5.png');
+
+}
+
+.three {
+  background-image: url('../../public/3.png');
+
+}
+
+.four {
+  background-image: url('../../public/4.1.png');
+
+}
+
+.five {
+  background-image: url('../../public/6.png');
+
+}
+
+@media (min-width: 768px) {
+  .one {
+    background-image: url('../../public/1.1-small.png');
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .two {
+    background-image: url('../../public/5-small.png');
+  }
+
+  .three {
+    background-image: url('../../public/3-small.png');
+  }
+
+  .four {
+    background-image: url('../../public/4.1-small.png');
+  }
+
+  .five {
+    background-image: url('../../public/6-small.png');
+  }
 }
