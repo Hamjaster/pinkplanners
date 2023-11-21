@@ -1,5 +1,6 @@
 import React from 'react'
 import { Dancing_Script } from 'next/font/google'
+import Image from 'next/image'
 const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 export default function Events() {
@@ -19,11 +20,13 @@ export default function Events() {
                     <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
                         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                             {/* Logo */}
-                            <img
-                                src="/corporate.jpg" // Replace with your image path
-                                alt="Event Logo 1"
-                                className="w-full h-56 object-cover object-center"
-                            />
+                            <div className="relative h-56">
+                                <Image fill
+                                    src="/corporate.jpg" // Replace with your image path
+                                    alt="Event Logo 1"
+                                    className="w-full h-56 object-cover object-center"
+                                />
+                            </div>
                             <div className="p-4">
                                 <h3 className="text-xl font-semibold mb-2">Corporate Events</h3>
                                 <p className="text-[#df1d74] cursor-pointer hover:underline">
@@ -38,11 +41,14 @@ export default function Events() {
                     <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
                         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                             {/* Logo */}
-                            <img
-                                src="/destination-weddings.jpg" // Replace with your image path
-                                alt="Event Logo 2"
-                                className="w-full h-56 object-cover object-center"
-                            />
+                            <div className="relative h-56">
+
+                                <Image fill
+                                    src="/destination-weddings.jpg" // Replace with your image path
+                                    alt="Event Logo 2"
+                                    className="w-full h-56 object-cover object-center"
+                                />
+                            </div>
                             <div className="p-4">
                                 <h3 className="text-xl font-semibold mb-2">Destination Weddings</h3>
                                 <p className="text-[#df1d74] cursor-pointer hover:underline">
@@ -57,11 +63,13 @@ export default function Events() {
                     <div className="w-full lg:w-1/3">
                         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                             {/* Logo */}
-                            <img
-                                src="/wedding.jpg" // Replace with your image path
-                                alt="Event Logo 3"
-                                className="w-full h-56 object-cover object-center"
-                            />
+                            <div className="relative h-56">
+                                <Image fill
+                                    src="/wedding.jpg" // Replace with your image path
+                                    alt="Event Logo 3"
+                                    className="w-full h-56 object-cover object-center"
+                                />
+                            </div>
                             <div className="p-4">
                                 <h3 className="text-xl font-semibold mb-2">Weddings</h3>
                                 <p className="text-[#df1d74] cursor-pointer hover:underline">
