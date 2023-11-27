@@ -22,16 +22,21 @@ export default function Navbar() {
 
     return (
         <>
-            <div className={`${isSticky ? "navbar-white shadow-xl" : ""} hidden transition-all duration-300 md:flex fixed z-50 w-full text-md bg-transparent text-white space-x-4 flex-row justify-center py-12  items-center bg-gradient-to-b from-black to-transparent`}>
+            <div className={`${isSticky ? "navbar-white shadow-xl" : ""} hidden transition-all duration-300 md:flex fixed z-50 w-full text-md bg-transparent text-white space-x-4 flex-row justify-evenly py-12  items-center bg-gradient-to-b from-black to-transparent`}>
+
+                <div className={`item text-2xl font-bold ${isSticky ? 'text-black' : ""} `}>Diamol</div>
 
                 <div className="items hidden [&>div]:cursor-pointer  flex-col space-y-1 sm:space-y-0 md:flex sm:space-x-8 sm:flex-row justify-evenly items-start sm:items-center [&>*]:uppercase ">
                     <div className="item">Services</div>
                     <div className="item">About Me</div>
                     <div className="item">Destinations</div>
-                    <div className={`item text-2xl font-bold ${isSticky ? 'text-[#df1d74]' : ""} `}>Logo</div>
                     <div className="item">Gallery</div>
                     <div className="item">Journals</div>
                     <div className="item">Inquire</div>
+                </div>
+
+                <div className={`"contact cursor-pointer border px-6 py-2  ${isSticky ? "border-black hover:text-white hover:bg-black" : "border-white hover:bg-white hover:text-black"} "`}>
+                    GET IN TOUCH
                 </div>
 
             </div>

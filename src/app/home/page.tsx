@@ -4,22 +4,23 @@ import Experience from '../../components/Experience'
 import About from '../../components/About'
 import Events from '../../components/Events'
 import WhyUs from '../../components/WhyUs'
-import Gallery from '../../components/Gallery'
+import Destinations from '../../components/Destinations'
 import Quotes from '../../components/Quotes'
 import Footer from '../../components/Footer'
 import Follow from '../../components/Follow'
+import Gallery from '../../components/Gallery/Gallery'
 
 export default function page() {
     return (
         <div>
             <Banner />
-            <Experience />
             <About />
-            <WhyUs />
-            <Events />
+            {/* <WhyUs /> */}
+            {/* <Events /> */}
+            <Destinations />
+            {/* <Quotes /> */}
+            {/* <Follow /> */}
             <Gallery />
-            <Quotes />
-            <Follow />
             <Footer />
         </div>
     )
