@@ -25,7 +25,7 @@ export default function Banner() {
                 <div className="image banner-Image">
                     {size.width < 740
                         ?
-                        <div className="relative h-screen ">
+                        <div className="relative h-[70vh] sm:h-screen ">
                             <Image fill src="/1.1-small.png" alt="" />
                         </div>
                         :
@@ -37,7 +37,7 @@ export default function Banner() {
                 <div className="image banner-Image">
                     {size.width < 740
                         ?
-                        <div className="relative h-screen ">
+                        <div className="relative h-[70vh] sm:h-screen ">
                             <Image fill src="/3-small.png" alt="" />
                         </div>
                         :
@@ -49,7 +49,7 @@ export default function Banner() {
                 <div className="image banner-Image">
                     {size.width < 740
                         ?
-                        <div className="relative h-screen ">
+                        <div className="relative h-[70vh] sm:h-screen ">
                             <Image fill src="/5-small.png" alt="" />
                         </div>
                         :
@@ -61,7 +61,7 @@ export default function Banner() {
                 <div className="image banner-Image">
                     {size.width < 740
                         ?
-                        <div className="relative h-screen ">
+                        <div className="relative h-[70vh] sm:h-screen ">
                             <Image fill src="/4.1-small.png" alt="" />
                         </div>
                         :
@@ -73,7 +73,7 @@ export default function Banner() {
                 <div className="image banner-Image">
                     {size.width < 740
                         ?
-                        <div className="relative h-screen ">
+                        <div className="relative h-[70vh] sm:h-screen ">
                             <Image fill src="/6-small.png" alt="" />
                         </div>
                         :

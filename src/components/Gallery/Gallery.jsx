@@ -14,7 +14,7 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 export default function Gallery() {
   return (
     <div className='my-24'>
-      <div className={`${dancing.className} ml-14  text-6xl font-thin`}>Our Gallery</div>
+      <div className={`${dancing.className} text-center  text-6xl font-thin`}>Our Gallery</div>
       <Swiper
         slidesPerView={5}
         spaceBetween={150}

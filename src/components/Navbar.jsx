@@ -36,7 +36,7 @@ export default function Navbar() {
                 </div>
 
                 <div className={`"contact cursor-pointer border px-6 py-2  ${isSticky ? "border-black hover:text-white hover:bg-black" : "border-white hover:bg-white hover:text-black"} "`}>
-                    GET IN TOUCH
+                    CONTACT US
                 </div>
 
             </div>
