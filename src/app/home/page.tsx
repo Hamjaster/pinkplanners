@@ -9,6 +9,7 @@ import Quotes from '../../components/Quotes'
 import Footer from '../../components/Footer'
 import Follow from '../../components/Follow'
 import Gallery from '../../components/Gallery/Gallery'
+import Services from '../../components/Services'
 
 export default function page() {
     return (
@@ -18,6 +19,7 @@ export default function page() {
             {/* <WhyUs /> */}
             {/* <Events /> */}
             <Destinations />
+            <Services />
             {/* <Quotes /> */}
             {/* <Follow /> */}
             <Gallery />

@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
 
             <div className='text-gray-300 font-extralight'>
-                © 2023 Rafanelli Events. All rights reserved.
+                © 2023 Diamol Events. All rights reserved.
             </div>
 
         </div>
