@@ -52,7 +52,7 @@ export default function Navbar() {
                 <div className='item'>Logout</div>
             </div>
 
-            <div className={`${isSticky ? "bg-white text-black py-3 " : "bg-gradient-to-b from-black to-transparent  py-6"} transition-all fixed md:hidden w-full text-white z-40 flex px-12 flex-row bg-transparent items-center justify-between`}>
+            <div className={`${isSticky ? "bg-white text-black py-3 " : "bg-gradient-to-b from-black to-transparent text-white  py-6"} transition-all fixed md:hidden w-full  z-40 flex px-12 flex-row bg-transparent items-center justify-between`}>
                 <span className='text-3xl font-bold'>Logo</span>
                 <span onClick={() => setshow(true)} className='text-3xl cursor-pointer'><VscMenu /></span>
             </div>

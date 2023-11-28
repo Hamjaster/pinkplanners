@@ -21,7 +21,7 @@ export default function Services() {
 
             <div className='px-6 flex flex-col md:flex-row justify-between items-center w-full'>
 
-                <ul className='[&>*]:py-4 flex flex-row flex-wrap items-center justify-center md:block font-light relative'>
+                <ul className='[&>*]:py-4 grid grid-cols-3 md:block font-light relative'>
                     <li onClick={() => setService('destination')} className={` ${service === "destination" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Destinations</li>
 
                     <li onClick={() => setService('corporate')} className={` ${service === "corporate" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Corporate</li>
