@@ -21,17 +21,17 @@ export default function Services() {
 
             <div className='px-6 flex flex-col md:flex-row justify-between items-center w-full'>
 
-                <ul className='[&>*]:py-4 grid grid-cols-3 md:block font-light relative'>
-                    <li onClick={() => setService('destination')} className={` ${service === "destination" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Destinations</li>
+                <ul className='[&>*]:py-4 text-sm sm:text-md grid grid-cols-2 sm:grid-cols-3 md:block font-light relative'>
+                    <li onClick={() => setService('destination')} className={` ${service === "destination" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Destinations</li>
 
-                    <li onClick={() => setService('corporate')} className={` ${service === "corporate" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Corporate</li>
+                    <li onClick={() => setService('corporate')} className={` ${service === "corporate" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Corporate</li>
 
-                    <li onClick={() => setService('wedding')} className={` ${service === "wedding" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Weddings</li>
+                    <li onClick={() => setService('wedding')} className={` ${service === "wedding" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Weddings</li>
 
-                    <li onClick={() => setService('photo')} className={` ${service === "photo" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Photography</li>
+                    <li onClick={() => setService('photo')} className={` ${service === "photo" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Photography</li>
 
 
-                    <li onClick={() => setService('social')} className={` ${service === "social" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-7 pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Social</li>
+                    <li onClick={() => setService('social')} className={` ${service === "social" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Social</li>
 
                     {/* white box in PC */}
                     <div className="hidden md:flex w-[25rem] lg:w-[36rem] pl-7 lg:pl-28 pr-7 lg:pr-12 flex-col justify-center space-y-5 h-[110%] lg:h-[150%] mx-8 bg-white absolute top-1/2 left-full -translate-y-1/2">
