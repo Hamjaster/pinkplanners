@@ -16,13 +16,13 @@ export default function page() {
         <div>
             <Banner />
             <About />
+            <Services />
+            <Gallery />
             {/* <WhyUs /> */}
             {/* <Events /> */}
             <Destinations />
-            <Services />
             {/* <Quotes /> */}
             {/* <Follow /> */}
-            <Gallery />
             <Footer />
         </div>
     )

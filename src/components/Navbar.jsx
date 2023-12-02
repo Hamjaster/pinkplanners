@@ -32,10 +32,9 @@ export default function Navbar() {
                     <div className="item">Destinations</div>
                     <div className="item">Gallery</div>
                     <div className="item">Journals</div>
-                    <div className="item">Inquire</div>
                 </div>
 
-                <div className={`"contact cursor-pointer border px-6 py-2  ${isSticky ? "border-black hover:text-white hover:bg-black" : "border-white hover:bg-white hover:text-black"} "`}>
+                <div className={`"contact transition-all duration-500 cursor-pointer border px-6 py-2  ${isSticky ? "border-black hover:text-white hover:bg-black" : "border-white hover:bg-white hover:text-black"} "`}>
                     CONTACT US
                 </div>
 

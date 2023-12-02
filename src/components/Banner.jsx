@@ -20,7 +20,7 @@ export default function Banner() {
 
     return (
         <div className=''>
-            <Carousel showArrows={false} showIndicators={true} interval={4000} showThumbs={false} infiniteLoop={true} autoPlay={true}>
+            <Carousel showArrows={false} showIndicators={true} interval={2000} showThumbs={false} infiniteLoop={true} autoPlay={true}>
 
                 <div className="image banner-Image">
                     {size.width < 740
