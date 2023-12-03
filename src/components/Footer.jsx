@@ -8,17 +8,17 @@ export default function Footer() {
     return (
         <div className='bg-black flex flex-row-reverse justify-between items-center px-12 py-8 text-base text-white'>
 
-            <div className="logos text-3xl items-center flex flex-row space-x-8">
+            <div className="logos gap-4 text-2xl sm:text-3xl items-center grid grid-cols-2 sm:grid-cols-4">
                 <div className='hover:text-gray-300 cursor-pointer'><FaInstagram /></div>
                 <div className='hover:text-gray-300 cursor-pointer'><FaFacebook /></div>
                 <div className='hover:text-gray-300 cursor-pointer'><FaTwitter /></div>
                 <div className='hover:text-gray-300 cursor-pointer'><FaWhatsapp /></div>
             </div>
 
-            <div className='text-gray-300 font-extralight'>
-                © 2023 Diamol Events. All rights reserved.
-                <span className='mx-4 underline cursor-pointer'>Privacy Policy</span>
-                <span className='mx-4 underline cursor-pointer'>Terms of Agreement</span>
+            <div className='text-gray-300 text-sm sm:text-base font-extralight flex flex-col sm:flex-row sm:space-x-3 space-y-1 sm:space-y-0 '>
+                <span className=''>© 2023 Diamol Events. All rights reserved.</span>
+                <span className=' underline cursor-pointer'>Privacy Policy</span>
+                <span className=' underline cursor-pointer'>Terms of Agreement</span>
             </div>
 
         </div>
