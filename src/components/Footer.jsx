@@ -6,7 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <div className='bg-black flex flex-row-reverse justify-between items-center px-12 py-8 text-base text-white'>
+        <div className='bg-black mt-7 flex flex-row-reverse justify-between items-center px-12 py-8 text-base text-white'>
 
             <div className="logos gap-4 text-2xl sm:text-3xl items-center grid grid-cols-2 sm:grid-cols-4">
                 <div className='hover:text-gray-300 cursor-pointer'><FaWhatsapp /></div>

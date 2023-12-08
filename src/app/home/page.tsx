@@ -23,7 +23,7 @@ export default function page() {
             <Destinations />
             {/* <Quotes /> */}
             {/* <Follow /> */}
-            <Footer />
+
         </div>
     )
 }
