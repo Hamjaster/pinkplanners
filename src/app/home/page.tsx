@@ -10,20 +10,26 @@ import Footer from '../../components/Footer'
 import Follow from '../../components/Follow'
 import Gallery from '../../components/Gallery/Gallery'
 import Services from '../../components/Services'
+import Navbar from '../../components/Navbar'
 
 export default function page() {
     return (
-        <div>
-            <Banner />
-            <About />
-            <Services />
-            <Gallery />
-            {/* <WhyUs /> */}
-            {/* <Events /> */}
-            <Destinations />
-            {/* <Quotes /> */}
-            {/* <Follow /> */}
+        <>
+            <Navbar />
+            <div>
 
-        </div>
+                <Banner />
+                <About />
+                <Services />
+                <Gallery />
+                {/* <WhyUs /> */}
+                {/* <Events /> */}
+                <Destinations />
+                {/* <Quotes /> */}
+                {/* <Follow /> */}
+
+            </div>
+            <Footer />
+        </>
     )
 }
