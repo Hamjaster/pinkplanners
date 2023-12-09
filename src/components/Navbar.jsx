@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState, } from 'react'
 import { VscMenu } from 'react-icons/vsc'
 import { AiOutlineClose } from 'react-icons/ai'
+import Link from 'next/link';
 // import logo from '../images/logo.jpg'
 
 export default function Navbar() {
@@ -23,14 +24,21 @@ export default function Navbar() {
     return (
         <>
             <div className={`${isSticky ? "navbar-white shadow-xl" : ""} hidden transition-all duration-300 lg:flex fixed z-50 w-full text-md bg-transparent text-white space-x-4 flex-row justify-evenly py-12  items-center bg-gradient-to-b from-black to-transparent`}>
-
-                <div className={`item text-2xl font-bold ${isSticky ? 'text-black' : ""} `}>Diamol</div>
+                <Link href={'/home'}>
+                    <div className={`item text-2xl font-bold ${isSticky ? 'text-black' : ""} `}>Diamol</div>
+                </Link>
 
                 <div className="items hidden [&>div]:cursor-pointer  flex-col space-y-1 sm:space-y-0 lg:flex sm:space-x-8 sm:flex-row justify-evenly items-start sm:items-center [&>*]:uppercase ">
+
                     <div className="item">Services</div>
+
+                    <Link href='/destination'>
+                        <div className="item">Destinations</div>
+                    </Link>
                     <div className="item">About Me</div>
-                    <div className="item">Destinations</div>
-                    <div className="item">Gallery</div>
+                    <Link href='/gallery'>
+                        <div className="item">Gallery</div>
+                    </Link>
                     <div className="item">Journals</div>
                 </div>
 

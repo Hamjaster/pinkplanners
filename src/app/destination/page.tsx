@@ -32,12 +32,12 @@ export default function page() {
         <div className='mb-44'>
             <div style={{
                 backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./work4.jpg)'
-            }} className="bg-image bg-cover bg-center w-full h-[34rem] text-white flex justify-center items-center mb-12">
+            }} className="bg-image bg-cover bg-center w-full h-[25rem] sm:h-[34rem] text-white flex justify-center items-center mb-12">
                 <div className="text mt-7 flex items-center flex-col space-y-4">
-                    <div className="text-6xl font-semibold">
+                    <div className="text-4xl sm:text-6xl font-semibold">
                         Destinations
                     </div>
-                    <div className='text-3xl font-extralight text-center'>We've covered every area for you</div>
+                    <div className='text-lg sm:text-3xl font-extralight text-center'>We've covered every area for you</div>
                 </div>
 
             </div>
@@ -61,7 +61,7 @@ export default function page() {
 
                             <div className="absolute inset-0 bg-black bg-opacity-30 opacity-100 transition-opacity duration-500 ease-in-out group-hover:opacity-20 ">
                             </div>
-                            <p className="text-white text-base inset-0 flex flex-col items-center justify-center absolute text-center space-y-4">
+                            <p className="text-white text-base inset-0 flex flex-col items-center justify-center space-y-3 absolute text-center ">
                                 <div className="text-3xl">{card.text}</div>
                                 <div className="font-semibold text-xl w-2/3">Magnificient, Breathtaking, Iconic</div>
                                 <div className="button transition-all duration-700 px-5 py-2 border-2 border-white group-hover:bg-white group-hover:text-black">

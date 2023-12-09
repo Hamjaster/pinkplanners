@@ -34,13 +34,13 @@ const PictureGallery = () => {
         <div className="">
             <div style={{
                 backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./work1.jpg)'
-            }} className="bg-image bg-cover bg-center w-full h-[34rem] text-white flex justify-center items-center mb-12">
+            }} className="bg-image bg-cover bg-center w-full h-[25rem] sm:h-[34rem] text-white flex justify-center items-center mb-12">
                 <div className="text mt-7 flex items-center flex-col space-y-4">
 
-                    <div className="text-6xl font-semibold">
+                    <div className="text-4xl sm:text-6xl font-semibold">
                         Our Portfolio
                     </div>
-                    <div className='text-3xl font-extralight text-center'>Don't believe us, see our work</div>
+                    <div className='text-lg sm:text-3xl font-extralight text-center'>Don't believe us, see our work</div>
                 </div>
 
             </div>
