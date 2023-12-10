@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import { IoCall } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
@@ -12,11 +12,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
 
 export default function page() {
-    const [loading, setLoading] = useState(false);
-    const [show, setshow] = useState(false)
-    const handleIframeLoad = () => {
-        setLoading(false);
-    };
+
     return (
         <>
             <NavbarWhite />
@@ -59,17 +55,11 @@ export default function page() {
                                 </span>
                             </a>
                         </p>
-                        {
-                            loading ?
-                                <div className="h-[25rem] w-full">
-                                    Loading....
-                                </div>
-                                :
-                                <div className='h-[25rem]' style={{ width: "100%" }}>
-                                    <iframe
-                                        width="100%" height={"100%"} scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vijayawada%20Andhra%C2%A0India+(Diamol)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population calculator map</a></iframe>
-                                </div>
-                        }
+                        <div className='h-[25rem]' style={{ width: "100%" }}>
+                            <iframe
+                                width="100%" height={"100%"} scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vijayawada%20Andhra%C2%A0India+(Diamol)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population calculator map</a></iframe>
+                        </div>
+
                     </div>
 
 
