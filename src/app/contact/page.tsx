@@ -4,38 +4,28 @@ import { IoCall } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
+import NavbarWhite from '../../components/NavbarWhite';
 import { BiHomeAlt2 } from 'react-icons/bi';
 import { FaHome } from 'react-icons/fa';
+import { VscMenu } from 'react-icons/vsc'
+import { AiOutlineClose } from 'react-icons/ai'
+import Link from 'next/link';
 
 export default function page() {
     const [loading, setLoading] = useState(false);
-
+    const [show, setshow] = useState(false)
     const handleIframeLoad = () => {
         setLoading(false);
     };
     return (
         <>
-            <Navbar />
-            <div style={{
-                backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./work9.jpg)'
-            }} className="bg-image bg-cover bg-center w-full h-[25rem] sm:h-[34rem] text-white flex justify-center items-center mb-12">
-                <div className="text mt-7 flex items-center flex-col space-y-4">
-                    <div className="text-4xl sm:text-6xl font-semibold">
-                        Get In Touch
-                    </div>
-                    <div className='text-lg sm:text-3xl font-extralight text-center'>We've got things covered for you</div>
-                </div>
-
-            </div>
+            <NavbarWhite />
 
             {/* Contact Section */}
-
-
-            <div className="flex gap-3 my-44 flex-col-reverse md:flex-row text-white w-11/12 mx-auto">
+            <div className="flex gap-3 flex-col-reverse md:flex-row text-white w-11/12 mx-auto">
 
                 {/* Right */}
-                <div className="h-min md:w-3/6 bg-black text-lg sm:text-xl">
+                <div className="h-min mb-20 md:mb-0 md:w-3/6 bg-black text-lg sm:text-xl">
 
                     <div className='pt-10'>
 
@@ -86,7 +76,7 @@ export default function page() {
                 </div>
 
                 {/* Left */}
-                <div className=" text-gray-800 flex flex-col p-8 md:w-3/6">
+                <div className=" text-gray-800 flex flex-col py-8 md:p-8 md:w-3/6">
                     <h2 className="text-3xl sm:text-4xl font-semibold mb-8">Contact Form</h2>
 
                     <form className='flex flex-col space-y-4'>
@@ -168,10 +158,6 @@ export default function page() {
                 </div>
 
             </div>
-
-
-
-            <Footer />
 
         </>
     )

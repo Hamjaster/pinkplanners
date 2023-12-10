@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
-import Navbar from '../../components/Navbar';
+import NavbarWhite from '../../components/NavbarWhite';
 import Footer from '../../components/Footer';
 
 const PictureGallery = () => {
@@ -24,30 +24,19 @@ const PictureGallery = () => {
         '/gallery (13).jpg',
         '/gallery (14).jpg',
         '/gallery (15).jpg',
+        '/gallery (20).jpg',
         '/gallery (16).jpg',
         '/gallery (17).jpg',
         '/gallery (18).jpg',
         '/gallery (19).jpg',
-        '/gallery (20).jpg',
         // Add more image URLs as needed
     ];
 
     return (
         <>
-            <Navbar />
+            <NavbarWhite />
             <div className="">
-                <div style={{
-                    backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./work1.jpg)'
-                }} className="bg-image bg-cover bg-center w-full h-[25rem] sm:h-[34rem] text-white flex justify-center items-center mb-12">
-                    <div className="text mt-7 flex items-center flex-col space-y-4">
 
-                        <div className="text-4xl sm:text-6xl font-semibold">
-                            Our Portfolio
-                        </div>
-                        <div className='text-lg sm:text-3xl font-extralight text-center'>Don't believe us, see our work</div>
-                    </div>
-
-                </div>
                 {/* gallery */}
                 <div className="gallery mx-5">
                     <ResponsiveMasonry
