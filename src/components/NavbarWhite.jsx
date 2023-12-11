@@ -22,7 +22,7 @@ export default function Navbar() {
 
 
     return (
-        <div className='sm:mb-20'>
+        <div className=''>
             {/* <Navbar/> */}
             <div className={`transition-all shadow-lg hidden lg:flex duration-300 w-full text-md bg-transparent bg-white text-black space-x-4 flex-row justify-evenly py-6 items-center `}>
 

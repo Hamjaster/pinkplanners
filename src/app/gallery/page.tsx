@@ -36,7 +36,13 @@ const PictureGallery = () => {
         <>
             <NavbarWhite />
             <div className="">
-
+                {/* Heading */}
+                <div className="text mb-12 bg-[#f3f4f6] py-32 text-center flex-col flex space-y-3">
+                    <div className="text-5xl tracking-wide font-medium">
+                        Gallery
+                    </div>
+                    <div className='text-2xl font-light'>Don't beleive us, see our work</div>
+                </div>
                 {/* gallery */}
                 <div className="gallery mx-5">
                     <ResponsiveMasonry

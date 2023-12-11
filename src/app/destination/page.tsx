@@ -34,6 +34,13 @@ export default function page() {
         <>
             <NavbarWhite />
             <div className='mb-44'>
+                {/* Heading */}
+                <div className="text mb-12 bg-[#f3f4f6] py-32 text-center flex-col flex space-y-3">
+                    <div className="text-5xl tracking-wide font-medium">
+                        Destinations
+                    </div>
+                    <div className='text-2xl font-light'>We've covered every place for you</div>
+                </div>
                 {/* Cards */}
                 <div className="grid mx-12 sm:mx-24 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {cards.map((card, index) => (
