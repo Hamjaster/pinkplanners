@@ -35,7 +35,7 @@ export default function page() {
             <NavbarWhite />
             <div className='mb-44'>
                 {/* Heading */}
-                <div className="text mb-12 bg-[#f3f4f6] py-32 text-center flex-col flex space-y-3">
+                <div className="text mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
                     <div className="text-5xl tracking-wide font-medium">
                         Destinations
                     </div>

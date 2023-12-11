@@ -37,7 +37,7 @@ const PictureGallery = () => {
             <NavbarWhite />
             <div className="">
                 {/* Heading */}
-                <div className="text mb-12 bg-[#f3f4f6] py-32 text-center flex-col flex space-y-3">
+                <div className="text mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
                     <div className="text-5xl tracking-wide font-medium">
                         Gallery
                     </div>
