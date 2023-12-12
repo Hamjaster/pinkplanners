@@ -22,9 +22,9 @@ export default function Navbar() {
 
 
     return (
-        <div className=''>
+        <>
             {/* <Navbar/> */}
-            <div className={`transition-all shadow-lg hidden lg:flex duration-300 w-full text-md bg-transparent bg-white text-black space-x-4 flex-row justify-evenly py-6 items-center `}>
+            <div className={`transition-all z-50 fixed shadow-lg hidden lg:flex duration-300 w-full text-md bg-transparent bg-white text-black space-x-4 flex-row justify-evenly py-6 items-center `}>
 
                 <Link href={'/home'}>
                     <div className={`item text-2xl text-black font-bold `}>Diamol</div>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
 
             </div>
-            {/* Nav menu on small screens */}
+            {/* menu on small screens */}
             <div className={`${show ? '' : "hidden"} bg-black z-50 fixed overflow-y-hidden  text-white top-0 right-0 w-full h-full flex flex-col items-center justify-start space-y-6 pt-20 text-xl `}>
                 <div onClick={() => setshow(false)} className="absolute cursor-pointer top-4 right-4">
                     <AiOutlineClose />
@@ -68,6 +68,6 @@ export default function Navbar() {
                 <span onClick={() => setshow(true)} className='text-3xl cursor-pointer'><VscMenu /></span>
             </div>
 
-        </div>
+        </>
     )
 }
