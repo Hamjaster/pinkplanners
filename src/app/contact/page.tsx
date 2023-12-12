@@ -2,7 +2,7 @@
 import React from 'react'
 import { IoCall } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
+import { MdAttachEmail, MdEmail } from "react-icons/md";
 import Footer from '../../components/Footer';
 import NavbarWhite from '../../components/NavbarWhite';
 import { BiHomeAlt2 } from 'react-icons/bi';
@@ -10,6 +10,7 @@ import { FaHome } from 'react-icons/fa';
 import { VscMenu } from 'react-icons/vsc'
 import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
+import { GrMail } from 'react-icons/gr';
 
 export default function page() {
 
@@ -25,7 +26,7 @@ export default function page() {
 
                     <div className='pt-10'>
 
-                        <p className="px-12 mb-6 flex flex-row items-center space-x-5">
+                        <p className="px-12 mb-4 flex flex-row items-center space-x-5">
                             <div className="text-2xl">
                                 <IoCall />
                             </div>
@@ -34,7 +35,7 @@ export default function page() {
                             </div>
                         </p>
 
-                        <p className="px-12 mb-6">
+                        <p className="px-12 mb-4">
                             <a className='flex flex-row items-center space-x-5' href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
                                 <div className="logo text-3xl">
                                     <IoLogoWhatsapp />
@@ -44,6 +45,18 @@ export default function page() {
                                 </span>
                             </a>
                         </p>
+
+                        <p className="px-12 mb-4">
+                            <a className='flex flex-row items-center space-x-5' target="_blank" rel="noopener noreferrer">
+                                <div className="logo text-3xl">
+                                    <GrMail />
+                                </div>
+                                <span>
+                                    diamolfounder@contact.com
+                                </span>
+                            </a>
+                        </p>
+
 
                         <p className="px-12 mb-12">
                             <a className='flex flex-row items-center space-x-5' target="_blank" rel="noopener noreferrer">
@@ -55,6 +68,7 @@ export default function page() {
                                 </span>
                             </a>
                         </p>
+
                         <div className='h-[25rem]' style={{ width: "100%" }}>
                             <iframe
                                 width="100%" height={"100%"} scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Vijayawada%20Andhra%C2%A0India+(Diamol)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population calculator map</a></iframe>
