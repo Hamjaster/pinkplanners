@@ -23,6 +23,7 @@ export default function Navbar() {
 
     return (
         <>
+
             <div className={`${isSticky ? "navbar-white shadow-xl" : ""} hidden transition-all duration-300 lg:flex fixed z-50 w-full text-md bg-transparent text-white space-x-4 flex-row justify-evenly py-12  items-center bg-gradient-to-b from-black to-transparent`}>
                 <Link href={'/home'}>
                     <div className={`item text-2xl font-bold ${isSticky ? 'text-black' : ""} `}>Diamol</div>
@@ -35,7 +36,7 @@ export default function Navbar() {
                     <Link href='/destination'>
                         <div className="item">Destinations</div>
                     </Link>
-                    <div className="item">About Me</div>
+                    <Link href={'/about'} className="item">About Me</Link>
                     <Link href='/gallery'>
                         <div className="item">Gallery</div>
                     </Link>

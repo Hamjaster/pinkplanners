@@ -19,6 +19,10 @@ export default function page() {
             <NavbarWhite />
 
             {/* Contact Section */}
+            <div className="contact section pt-36">
+
+            </div>
+
             <div className="flex gap-3 pt-36 flex-col-reverse md:flex-row text-white w-11/12 mx-auto">
 
                 {/* Right */}
