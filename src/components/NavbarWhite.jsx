@@ -37,7 +37,7 @@ export default function Navbar() {
                     <Link href='/destination'>
                         <div className="item">Destinations</div>
                     </Link>
-                    <div className="item">About Me</div>
+                    <Link href={'/about'} className="item">About Me</Link>
                     <Link href='/gallery'>
                         <div className="item">Gallery</div>
                     </Link>
