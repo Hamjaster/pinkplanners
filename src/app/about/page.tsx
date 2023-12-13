@@ -9,6 +9,7 @@ import { CiGlobe } from "react-icons/ci";
 import { MdSupportAgent } from "react-icons/md";
 import Footer from '../../components/Footer';
 import NavbarWhite from '../../components/NavbarWhite'
+import Image from 'next/image';
 
 export default function page() {
 
@@ -121,7 +122,11 @@ export default function page() {
 
                 {/* Image Section */}
                 <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-                    <img
+                    <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
                         src="/work3.jpg" // Replace with your image path
                         alt="About Us"
                         className="w-full h-auto rounded-lg shadow-lg"
