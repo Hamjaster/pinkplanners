@@ -1,7 +1,6 @@
 import React from 'react'
 import { Dancing_Script } from 'next/font/google'
 const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
-import WhyUsCards from '../../components/whyUsCards'
 import { FaAddressCard } from 'react-icons/fa6';
 import { SlNote } from "react-icons/sl";
 import { FaRegUser } from "react-icons/fa";
