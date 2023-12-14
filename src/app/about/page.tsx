@@ -81,11 +81,11 @@ export default function page() {
 
             {/* Info */}
             <div className="quote  my-24 text-center space-y-5 w-10/12 mx-auto">
-                <div className="text-5xl leading-tight font-semibold ">
+                <div className="text-3xl sm:text-5xl leading-tight font-semibold ">
                     We Don’t Simply Plan Events –
                     We Craft Extraordinary Experiences.
                 </div>
-                <div className='text-lg w-9/12 mx-auto'>
+                <div className='text-base sm:text-lg w-11/12 sm:w-9/12 mx-auto'>
                     At JUGS, we set out to create exceptional corporate events that exceed expectations and empower both our clients and our team. We embrace challenges with passion and commit to realising every big dream trusted to us.
                 </div>
 
@@ -96,7 +96,7 @@ export default function page() {
                         {cardInfo.map((card, index) => (
                             <div
                                 key={index}
-                                className="w-full lg:w-1/4 bg-white border-2 mb-6 lg:mb-0"
+                                className="w-full lg:w-1/4 bg-white border-2 mb-3 lg:mb-0"
                             >
                                 <div className="text-center py-8">
 
@@ -134,13 +134,14 @@ export default function page() {
 
                 {/* Text Section */}
                 <div className="w-full lg:w-1/2 lg:pl-12">
+
                     <div className="text-center lg:text-left">
-                        <h2 className={`" text-5xl font-semibold mb-4 "`}>Our Core Values</h2>
-                        <p className="text-lg space-y-2 mb-6">
+                        <h2 className={`" text-3xl sm:text-5xl font-semibold mb-4 "`}>Our Core Values</h2>
+                        <p className="text-base sm:text-lg space-y-2 mb-3 sm:mb-6">
                             <div>
                                 Guided by our core values, we are able to consistently surpass client expectations – empowering our team along the way.
                             </div>
-                            <ul className="list-disc ml-4">
+                            <ul className="lg:list-disc ml-4">
                                 <li>We nurture potential</li>
                                 <li>We collaborate and respect</li>
                                 <li>We empower with integrity</li>
@@ -148,7 +149,7 @@ export default function page() {
                             </ul>
 
                         </p>
-                        <button className="bg-[rgb(29,29,29)] transition-all hover:bg-[rgb(40,40,40)] text-xl text-white font-semibold py-3 px-8 rounded-2xl ">
+                        <button className="bg-[rgb(29,29,29)] transition-all hover:bg-[rgb(40,40,40)] text-base sm:text-xl text-white font-semibold w-full sm:w-auto py-2 sm:py-3 px-5 sm:px-8 rounded-2xl ">
                             Discover Us
                         </button>
                     </div>
@@ -204,10 +205,10 @@ export default function page() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="text-center">
-                        <h2 className="text-3xl font-semibold sm:text-5xl">
+                        <h2 className="text-3xl sm:text-5xl font-semibold sm:text-5xl">
                             Latest Blogs
                         </h2>
-                        <p className="mt-3 text-lg font-light text-gray-600 w-1/2 mx-auto">
+                        <p className="mt-3 text-base sm:text-lg font-light text-gray-600 w-11/12  sm:w-1/2 mx-auto">
                             We don’t just plan events – we craft experiences.
                             <br />
                             Discover captivating case studies, expert tips, and endless inspiration for your next corporate event.

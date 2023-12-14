@@ -31,8 +31,9 @@ export default function Navbar() {
                 </Link>
 
                 <div className="items hidden [&>div]:cursor-pointer  flex-col space-y-1 sm:space-y-0 lg:flex sm:space-x-8 sm:flex-row justify-evenly items-start sm:items-center [&>*]:uppercase ">
-
-                    <div className="item">Services</div>
+                    <Link href='/events'>
+                        <div className="item">Events</div>
+                    </Link>
 
                     <Link href='/destination'>
                         <div className="item">Destinations</div>
