@@ -14,7 +14,7 @@ import { GrMail } from 'react-icons/gr';
 import { Arizonia } from 'next/font/google'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
-export default function page() {
+export default function Contact() {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(''); // State to hold the selected option
 
