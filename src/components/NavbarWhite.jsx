@@ -42,7 +42,9 @@ export default function Navbar() {
                     <Link href='/gallery'>
                         <div className="item">Gallery</div>
                     </Link>
-                    <div className="item">Journals</div>
+                    <Link href={'/blogs'}>
+                        <div className="item">Journals</div>
+                    </Link>
                 </div>
 
                 <Link href={'/contact'} >

@@ -17,17 +17,11 @@ export default function page() {
         <>
             <Navbar />
             <div>
-
                 <Banner />
                 <About />
                 <Services />
                 <Gallery />
-                {/* <WhyUs /> */}
-                {/* <Events /> */}
                 <Destinations />
-                {/* <Quotes /> */}
-                {/* <Follow /> */}
-
             </div>
             <Footer />
         </>

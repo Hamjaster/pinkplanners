@@ -1,8 +1,9 @@
 import { Inter } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
 import './globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-const inter = Inter({ subsets: ['latin'] })
+const inter = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',

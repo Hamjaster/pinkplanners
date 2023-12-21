@@ -1,51 +1,51 @@
 // components/BlogPage.js
 
 import React from 'react';
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import NavbarWhite from '../../components/NavbarWhite'
 import Footer from '../../components/Footer';
 
 const BlogPage = () => {
     const blogPosts = [
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work3.jpg"
             // Add other details as needed
         },
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work4.jpg"
             // Add other details as needed
         },
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work5.jpg"
             // Add other details as needed
         },
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work6.jpg"
             // Add other details as needed
         },
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work7.jpg"
             // Add other details as needed
         },
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work8.jpg"
             // Add other details as needed
         },
         {
-            title: 'Blog Post Title 1',
+            title: 'Journal Title 1',
             date: 'January 1, 2023',
             img: "./work9.jpg"
             // Add other details as needed
@@ -56,9 +56,9 @@ const BlogPage = () => {
     return (
         <>
             <NavbarWhite />
-            <div className="text pt-36 mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
+            <div className="text pt-36 mb-12 py-10 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
-                    Our Blogs
+                    Journals
                 </div>
                 <div className='text-2xl font-light'>Discover what we offer for your needs</div>
             </div>

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function About() {
     return (

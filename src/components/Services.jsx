@@ -1,7 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export const services = {
     wedding: ["Weddings", "Your big day, infused with magic.", 'Explore Diamol Weddings', "./work6.jpg"],
@@ -15,7 +16,7 @@ export default function Services() {
     return (
         <div className='my-44'>
 
-            <h1 className={`' text-6xl my-28 text-center font-semibold ${dancing.className} '`}>Our Services</h1>
+            <h1 className={`' text-6xl my-12 text-center font-semibold ${dancing.className} '`}>Our Services</h1>
 
             <div className='px-6 flex flex-col md:flex-row justify-between items-center w-full'>
 

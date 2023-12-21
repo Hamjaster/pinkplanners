@@ -1,8 +1,8 @@
 import React from 'react'
 import Footer from '../../components/Footer';
 import NavbarWhite from '../../components/NavbarWhite';
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function page() {
     const cards = [
@@ -37,7 +37,7 @@ export default function page() {
             <NavbarWhite />
             <div className='mb-44'>
                 {/* Heading */}
-                <div className="text pt-36 mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
+                <div className="text pt-36 mb-12 py-10 text-center flex-col flex space-y-3">
                     <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                         Destinations
                     </div>

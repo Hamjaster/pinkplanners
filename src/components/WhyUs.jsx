@@ -3,8 +3,8 @@ import { GrUserExpert } from "react-icons/gr";
 import { GrAssistListening } from "react-icons/gr";
 import { TbMoneybag } from "react-icons/tb";
 import { TiTabsOutline } from "react-icons/ti";
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function WhyUs() {
     return (

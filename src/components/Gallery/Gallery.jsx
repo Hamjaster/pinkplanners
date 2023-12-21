@@ -2,8 +2,8 @@
 import React from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';

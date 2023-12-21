@@ -1,6 +1,6 @@
 import React from 'react'
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { FaAddressCard } from 'react-icons/fa6';
 import { SlNote } from "react-icons/sl";
 import { FaRegUser } from "react-icons/fa";
@@ -72,7 +72,7 @@ export default function page() {
     return (
         <div className='text-[rgb(40,40,40)] bg-[#e5e7eb]'>
             <NavbarWhite />
-            <div className="text pt-36 mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
+            <div className="text pt-36 mb-12  py-20 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     About Us
                 </div>
@@ -80,7 +80,7 @@ export default function page() {
             </div>
 
             {/* Info */}
-            <div className="quote  my-24 text-center space-y-5 w-10/12 mx-auto">
+            <div className="quote  my-24 text-center space-y-5 w-11/12 mx-auto">
                 <div className="text-3xl sm:text-5xl leading-tight font-semibold ">
                     We Don’t Simply Plan Events –
                     We Craft Extraordinary Experiences.
@@ -117,7 +117,7 @@ export default function page() {
 
 
             {/* Core values */}
-            <div className="flex my-24 text-[rgb(40,40,40)] flex-col lg:flex-row items-center justify-center lg:justify-between py-8 px-4 lg:px-20">
+            <div className="flex my-24 text-[rgb(40,40,40)] flex-col lg:flex-row items-center justify-center lg:justify-between py-8 px-4 lg:px-14">
 
                 {/* Image Section */}
                 <div className="w-full lg:w-1/2 mb-6 lg:mb-0">

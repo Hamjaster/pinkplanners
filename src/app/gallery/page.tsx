@@ -5,8 +5,8 @@ import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import NavbarWhite from '../../components/NavbarWhite';
 import Footer from '../../components/Footer';
-import { Dancing_Script } from 'next/font/google'
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 const PictureGallery = () => {
     // Replace these URLs with your image URLs
@@ -39,7 +39,7 @@ const PictureGallery = () => {
             <NavbarWhite />
             <div className="">
                 {/* Heading */}
-                <div className="text pt-40 mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
+                <div className="text pt-40 mb-12 py-10 text-center flex-col flex space-y-3">
                     <div className={`" text-6xl ${dancing.className} tracking-wide font-bold"`}>
                         Gallery
                     </div>

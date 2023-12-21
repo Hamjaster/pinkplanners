@@ -2,9 +2,9 @@
 
 import React from 'react';
 import NavbarWhite from '../../components/NavbarWhite'
-import { Dancing_Script } from 'next/font/google'
 import Footer from '../../components/Footer';
-const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
+import { Arizonia } from 'next/font/google'
+const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 const ServicesPage = () => {
     const services = [
@@ -38,7 +38,7 @@ const ServicesPage = () => {
     return (
         <>
             <NavbarWhite />
-            <div className="text pt-36 mb-12 bg-[#f3f4f6] py-20 text-center flex-col flex space-y-3">
+            <div className="text pt-36 mb-12  py-10 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     Events
                 </div>
@@ -57,7 +57,7 @@ const ServicesPage = () => {
 
                             <div className="lg:w-1/2 m-4 relative">
                                 {/* <div className="absolute inset-0 bg-black  rounded-lg"></div> */}
-                                <img src={service.image} alt={`Service ${index + 1}`} className="w-full grayscale group-hover:grayscale-0 transition-all cursor-pointer h-auto" />
+                                <img src={service.image} alt={`Service ${index + 1}`} className="w-full  transition-all cursor-pointer h-auto" />
                             </div>
 
                             <div className="lg:w-1/2 p-4 flex flex-col justify-center">
