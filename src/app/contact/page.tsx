@@ -19,7 +19,7 @@ export default function page() {
             <NavbarWhite />
 
             {/* Contact Section */}
-            <div className="contact section pt-36">
+            <div className="contact section pt-8">
 
             </div>
 

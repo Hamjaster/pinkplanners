@@ -3,6 +3,7 @@
 import React from 'react';
 import NavbarWhite from '../../components/NavbarWhite'
 import { Dancing_Script } from 'next/font/google'
+import Footer from '../../components/Footer';
 const dancing = Dancing_Script({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 const ServicesPage = () => {
@@ -71,6 +72,7 @@ const ServicesPage = () => {
                     ))}
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
