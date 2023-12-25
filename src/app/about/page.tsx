@@ -51,32 +51,32 @@ export default function page() {
         },
     ];
 
-    const blogs = [
+    const Journals = [
         {
-            title: 'Blog Title 1',
+            title: 'Journal Title 1',
             image: './work1.jpg', // Replace with your image URL
             link: '/blog/1', // Replace with your blog link
         },
         {
-            title: 'Blog Title 2',
+            title: 'Journal Title 2',
             image: './work2.jpg', // Replace with your image URL
             link: '/blog/2', // Replace with your blog link
         },
         {
-            title: 'Blog Title 3',
+            title: 'Journal Title 3',
             image: './work4.jpg', // Replace with your image URL
             link: '/blog/3', // Replace with your blog link
         },
     ];
 
     return (
-        <div className='text-[rgb(40,40,40)] bg-[#e5e7eb]'>
+        <div className='text-black'>
             <NavbarWhite />
-            <div className="text pt-36 mb-12  py-20 text-center flex-col flex space-y-3">
+            <div className="text pt-36 mb-12  py-20 text-center flex-col flex space-y-1">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     About Us
                 </div>
-                {/* <div className='text-2xl font-light'>We've covered every place for you</div> */}
+                <div className='text-2xl font-light'>Explore more about us</div>
             </div>
 
             {/* Info */}
@@ -117,7 +117,7 @@ export default function page() {
 
 
             {/* Core values */}
-            <div className="flex my-24 text-[rgb(40,40,40)] flex-col lg:flex-row items-center justify-center lg:justify-between py-8 px-4 lg:px-14">
+            <div className="flex my-24 text-black flex-col lg:flex-row items-center justify-center lg:justify-between py-8 px-4 lg:px-14">
 
                 {/* Image Section */}
                 <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
@@ -200,13 +200,13 @@ export default function page() {
 
             </div>
 
-            {/* Blogs */}
+            {/* Journals */}
             <div className="py-16 my-44">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="text-center">
                         <h2 className="text-3xl sm:text-5xl font-semibold sm:text-5xl">
-                            Latest Blogs
+                            Latest Journals
                         </h2>
                         <p className="mt-3 text-base sm:text-lg font-light text-gray-600 w-11/12  sm:w-1/2 mx-auto">
                             We don’t just plan events – we craft experiences.
@@ -217,7 +217,7 @@ export default function page() {
 
                     <div className="mt-12 mx-24 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-                        {blogs.map((blog, index) => (
+                        {Journals.map((blog, index) => (
                             <a
                                 key={index}
                                 href={blog.link}

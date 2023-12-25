@@ -14,7 +14,7 @@ export default function Services() {
     const [service, setService] = useState('wedding')
 
     return (
-        <div className='my-44'>
+        <div className='mb-44'>
 
             <h1 className={`' text-6xl my-12 text-center font-semibold ${dancing.className} '`}>Our Services</h1>
 

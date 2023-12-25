@@ -140,16 +140,16 @@ export default function Contact() {
                         <div className="flex gap-5 flex-row  items-center justify-between">
                             <div className='w-full relative'>
 
-                                <input type="text" id="city" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " />
+                                <input type="text" id="city" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " />
 
-                                <label htmlFor="city" className="absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-black peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Event Date</label>
+                                <label htmlFor="city" className="absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-black  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Event Date</label>
 
                             </div>
                             <div className='w-full relative'>
 
-                                <input type="text" id="city" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " />
+                                <input type="text" id="city" className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " />
 
-                                <label htmlFor="city" className="absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-black peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Guest Count</label>
+                                <label htmlFor="city" className="absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-black  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Guest Count</label>
 
                             </div>
                         </div>
@@ -161,22 +161,22 @@ export default function Contact() {
                                         type="text"
                                         id="city"
                                         value={selectedOption}
-                                        className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none cursor-pointer focus:ring-0 focus:border-black peer"
+                                        className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none cursor-pointer focus:ring-0 focus:border-black peer"
                                         placeholder="Select Budget"
                                         readOnly
                                         onClick={toggleDropdown}
                                     />
                                     <div className="absolute  inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                                        <svg className={`w-5 h-5 text-gray-500 dark:text-gray-400 ${isOpen ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className={`w-5 h-5 text-gray-500  ${isOpen ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                                         </svg>
                                     </div>
                                 </div>
                                 {isOpen && (
-                                    <div onClick={toggleDropdown} className="cursor-pointer absolute z-10 mt-1 w-full bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-600 rounded-md shadow-lg">
+                                    <div onClick={toggleDropdown} className="cursor-pointer absolute z-10 mt-1 w-full bg-white border border-gray-300  rounded-md shadow-lg">
                                         <div className="py-1">
                                             {options.map((option, index) => (
-                                                <button key={index} className="block w-full text-left px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" onClick={() => selectOption(option)}>
+                                                <button key={index} className="block w-full text-left px-4 py-2 text-gray-800" onClick={() => selectOption(option)}>
                                                     {option}
                                                 </button>
                                             ))}
