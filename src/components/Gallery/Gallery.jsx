@@ -18,7 +18,7 @@ export default function Gallery() {
   const isSmall = useMediaQuery({ query: '(max-width: 640px)' })
   return (
     <div className='my-24  '>
-      <div className={`${dancing.className} text-center  text-6xl font-thin`}>Our Gallery</div>
+      <div className={`${dancing.className} text-center my-7 text-6xl font-thin`}>Our Gallery</div>
       <Swiper
         slidesPerView={!isSmall ? 5 : 1}
         spaceBetween={isSmall ? 0 : 150}
