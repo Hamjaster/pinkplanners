@@ -3,11 +3,14 @@ import React, { useEffect, useRef, useState, } from 'react'
 import { VscMenu } from 'react-icons/vsc'
 import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 // import logo from '../images/logo.jpg'
 
 export default function Navbar() {
     const [isSticky, setIsSticky] = useState(false);
     const [show, setshow] = useState(false)
+    const router = useRouter()
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,6 +23,10 @@ export default function Navbar() {
         };
     }, []);
 
+    const moveBy = (to) => {
+        router.push(to)
+        setshow(false)
+    }
 
     return (
         <>
@@ -61,10 +68,12 @@ export default function Navbar() {
                 <div onClick={() => setshow(false)} className="absolute cursor-pointer top-4 right-4">
                     <AiOutlineClose />
                 </div>
-                <div className="item">Home</div>
-                <div className="item">My Orders</div>
-                <div className="item">Create a Product</div>
-                <div className='item'>Logout</div>
+                <div className='cursor-pointer' onClick={() => moveBy('/')}>Home</div>
+                <div className='cursor-pointer' onClick={() => moveBy('/about')}>About</div>
+                <div className='cursor-pointer' onClick={() => moveBy('/gallery')}>Gallery</div>
+                <div className='cursor-pointer' onClick={() => moveBy('/destinations')}>Destinations</div>
+                <div className='cursor-pointer' onClick={() => moveBy('/blogs')}>Journals</div>
+                <div className='cursor-pointer' onClick={() => moveBy('/contact')}>Contact us</div>
             </div>
             {/* Mobile nav */}
             <div className={`${isSticky ? "bg-white text-black py-3 " : "bg-gradient-to-b from-black to-transparent text-white  py-6"} transition-all fixed lg:hidden w-full  z-40 flex px-12 flex-row bg-transparent items-center justify-between`}>
