@@ -6,9 +6,11 @@ import { SlNote } from "react-icons/sl";
 import { FaRegUser } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 import { MdSupportAgent } from "react-icons/md";
-import Footer from '../../components/Footer';
-import NavbarWhite from '../../components/NavbarWhite'
+import Footer from '../../../components/Footer';
+import NavbarWhite from '../../../components/NavbarWhite'
 import Image from 'next/image';
+import Gallery from '../../../components/Gallery/Gallery';
+import { GenCarousel } from '../../../utils';
 
 export default function page() {
 
@@ -69,10 +71,18 @@ export default function page() {
         },
     ];
 
+    const images = [
+        "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"
+    ]
+
     return (
         <div className='text-black'>
             <NavbarWhite />
-            <div className="text pt-36 mb-12  py-20 text-center flex-col flex space-y-1">
+            <div className="pt-28">
+                <GenCarousel images={images} />
+            </div>
+
+            <div className="text mb-12 py-10 text-center flex-col flex space-y-1">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     About Us
                 </div>
@@ -201,7 +211,7 @@ export default function page() {
             </div>
 
             {/* Journals */}
-            <div className="py-16 my-44">
+            <div className="py-16 my-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="text-center">
@@ -240,7 +250,7 @@ export default function page() {
                 </div>
             </div>
 
-            <Footer />
+
         </div>
     )
 }

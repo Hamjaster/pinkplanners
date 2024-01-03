@@ -6,6 +6,7 @@ import Services from '../components/Services'
 import About from '../components/About'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
+import CTA from '../components/CTA'
 
 export default function Home() {
   return (
@@ -22,8 +23,8 @@ export default function Home() {
         <Destinations />
         {/* <Quotes /> */}
         {/* <Follow /> */}
-
       </div>
+      <CTA />
       <Footer />
     </>
   )

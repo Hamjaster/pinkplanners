@@ -3,9 +3,11 @@
 
 import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
-import NavbarWhite from '../../components/NavbarWhite';
-import Footer from '../../components/Footer';
+import NavbarWhite from '../../../components/NavbarWhite';
+import Footer from '../../../components/Footer';
 import { Arizonia } from 'next/font/google'
+import CTA from '../../../components/CTA';
+import { GenCarousel } from '../../../utils';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 const PictureGallery = () => {
@@ -34,12 +36,19 @@ const PictureGallery = () => {
         // Add more image URLs as needed
     ];
 
+    const images2 = [
+        "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"
+    ]
+
     return (
         <>
             <NavbarWhite />
+            <div className="pt-28">
+                <GenCarousel images={images2} />
+            </div>
             <div className="">
                 {/* Heading */}
-                <div className="text pt-40 mb-12 py-10 text-center flex-col flex space-y-3">
+                <div className="text mb-12 py-10 text-center flex-col flex space-y-3">
                     <div className={`" text-6xl ${dancing.className} tracking-wide font-bold"`}>
                         Gallery
                     </div>
@@ -70,7 +79,7 @@ const PictureGallery = () => {
                     </ResponsiveMasonry>
                 </div>
             </div>
-            <Footer />
+
         </>
     );
 };

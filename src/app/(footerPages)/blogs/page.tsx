@@ -3,8 +3,9 @@
 import React from 'react';
 import { Arizonia } from 'next/font/google'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
-import NavbarWhite from '../../components/NavbarWhite'
-import Footer from '../../components/Footer';
+import NavbarWhite from '../../../components/NavbarWhite'
+import Footer from '../../../components/Footer';
+import { GenCarousel } from '../../../utils';
 
 const BlogPage = () => {
     const blogPosts = [
@@ -53,10 +54,16 @@ const BlogPage = () => {
         // Add more blog posts similarly
     ];
 
+    const images = [
+        "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"
+    ]
     return (
         <>
             <NavbarWhite />
-            <div className="text pt-36 mb-12 py-10 text-center flex-col flex space-y-3">
+            <div className="pt-28">
+                <GenCarousel images={images} />
+            </div>
+            <div className="text  mb-12 py-10 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     Journals
                 </div>
@@ -88,7 +95,7 @@ const BlogPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </>
     );
 };

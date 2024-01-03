@@ -1,4 +1,12 @@
+"use client"
 import { useEffect, useState } from "react";
+
+// import required modules
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { useMediaQuery } from 'react-responsive'
+import "./utils.css"
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 // Hook
 export function useWindowSize() {
@@ -30,4 +38,33 @@ export function useWindowSize() {
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
   return windowSize;
+}
+
+export function GenCarousel({ images }) {
+
+  const isSmall = useMediaQuery({ query: '(max-width: 640px)' })
+
+  return <Swiper
+    slidesPerView={!isSmall ? 5 : 1}
+    spaceBetween={isSmall ? 0 : 150}
+    pagination={{
+      clickable: true,
+    }}
+    loop={true}
+    speed={5000}
+    autoplay={{
+      delay: 1,
+      disableOnInteraction: false,
+    }}
+    modules={[Pagination, Navigation, Autoplay]}
+    className="mySwiper"
+  >
+    {images.map((img) => {
+      return <SwiperSlide>
+        <div style={{ backgroundImage: `url(${img})` }} className="h-64 sm:w-64 w-full bg-center bg-cover">
+        </div>
+      </SwiperSlide>
+    })}
+  </Swiper>
+
 }

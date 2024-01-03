@@ -1,9 +1,10 @@
 // components/ServicesPage.js
 
 import React from 'react';
-import NavbarWhite from '../../components/NavbarWhite'
-import Footer from '../../components/Footer';
+import NavbarWhite from '../../../components/NavbarWhite'
+import Footer from '../../../components/Footer';
 import { Arizonia } from 'next/font/google'
+import { GenCarousel } from '../../../utils';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 const ServicesPage = () => {
@@ -35,10 +36,17 @@ const ServicesPage = () => {
         // Add more services as needed
     ];
 
+    const images = [
+        "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"
+    ]
+
     return (
         <>
             <NavbarWhite />
-            <div className="text pt-36 mb-12  py-10 text-center flex-col flex space-y-3">
+            <div className="pt-28">
+                <GenCarousel images={images} />
+            </div>
+            <div className="text mb-12  py-10 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     Events
                 </div>
@@ -72,7 +80,7 @@ const ServicesPage = () => {
                     ))}
                 </div>
             </div>
-            <Footer />
+
         </>
     );
 };

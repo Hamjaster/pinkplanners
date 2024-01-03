@@ -5,7 +5,7 @@ const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function Destinations() {
     return (
-        <div className='px-4 sm:px-6 md:px-28 mb-44  text-center'>
+        <div className='px-4 sm:px-6 md:px-28 mb-12 text-center'>
 
             <div className="text my-12">
                 <h2 className={`text-6xl text-black font-thin ${dancing.className}`}>Our Results</h2>

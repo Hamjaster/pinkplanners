@@ -32,7 +32,7 @@ export default function Navbar() {
             {/* <Navbar/> */}
             <div className={`transition-all z-50 fixed shadow-lg hidden lg:flex duration-300 w-full text-md bg-transparent bg-white text-black space-x-4 flex-row justify-evenly py-6 items-center `}>
 
-                <Link href={'/home'}>
+                <Link href={'/'}>
                     <div className={`item text-2xl text-black font-bold `}>Diamol</div>
                 </Link>
 
@@ -78,6 +78,8 @@ export default function Navbar() {
                 <span className='text-3xl font-bold'>Logo</span>
                 <span onClick={() => setshow(true)} className='text-3xl cursor-pointer'><VscMenu /></span>
             </div>
+
+
 
         </>
     )
