@@ -59,8 +59,8 @@ export function GenCarousel({ images }) {
     modules={[Pagination, Navigation, Autoplay]}
     className="mySwiper"
   >
-    {images.map((img) => {
-      return <SwiperSlide>
+    {images.map((img, i) => {
+      return <SwiperSlide key={i}>
         <div style={{ backgroundImage: `url(${img})` }} className="h-64 sm:w-64 w-full bg-center bg-cover">
         </div>
       </SwiperSlide>
