@@ -40,7 +40,7 @@ export default function page() {
         <>
             <NavbarWhite />
             <div className="pt-28">
-                <GenCarousel images={images} />
+                {/* <GenCarousel images={images} /> */}
             </div>
             <div className='mb-44'>
                 {/* Heading */}

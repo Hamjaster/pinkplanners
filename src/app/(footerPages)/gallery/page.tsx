@@ -44,7 +44,7 @@ const PictureGallery = () => {
         <>
             <NavbarWhite />
             <div className="pt-28">
-                <GenCarousel images={images2} />
+                {/* <GenCarousel images={images2} /> */}
             </div>
             <div className="">
                 {/* Heading */}
@@ -63,7 +63,7 @@ const PictureGallery = () => {
                             {images.map((image, index) => (
                                 <div key={index} className="relative cursor-pointer group">
                                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70  transition duration-300 ease-in-out flex justify-center items-center">
-                                        <p className="text-white text-2xl font-extralight uppercase text-center">Your Text Here</p>
+                                        {/* <p className="text-white text-2xl font-extralight uppercase text-center">Your Text Here</p> */}
                                     </div>
                                     <Image
                                         src={image}

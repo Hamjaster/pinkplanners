@@ -10,47 +10,47 @@ import { GenCarousel } from '../../../utils';
 const BlogPage = () => {
     const blogPosts = [
         {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
+            title: 'Traditional wedding',
+            date: 'Traditional South Indian Wedding Rituals',
             img: "./work3.jpg"
             // Add other details as needed
         },
         {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
+            title: 'Innovative wedding',
+            date: 'Innovative Wedding Entertainment Ideas',
             img: "./work4.jpg"
             // Add other details as needed
         },
         {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
+            title: 'Wedding Destinations',
+            date: 'Wedding Destinations in South India',
             img: "./work5.jpg"
             // Add other details as needed
         },
-        {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
-            img: "./work6.jpg"
-            // Add other details as needed
-        },
-        {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
-            img: "./work7.jpg"
-            // Add other details as needed
-        },
-        {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
-            img: "./work8.jpg"
-            // Add other details as needed
-        },
-        {
-            title: 'Journal Title 1',
-            date: 'January 1, 2023',
-            img: "./work9.jpg"
-            // Add other details as needed
-        },
+        // {
+        //     title: 'Journal Title 1',
+        //     date: 'January 1, 2023',
+        //     img: "./work6.jpg"
+        //     // Add other details as needed
+        // },
+        // {
+        //     title: 'Journal Title 1',
+        //     date: 'January 1, 2023',
+        //     img: "./work7.jpg"
+        //     // Add other details as needed
+        // },
+        // {
+        //     title: 'Journal Title 1',
+        //     date: 'January 1, 2023',
+        //     img: "./work8.jpg"
+        //     // Add other details as needed
+        // },
+        // {
+        //     title: 'Journal Title 1',
+        //     date: 'January 1, 2023',
+        //     img: "./work9.jpg"
+        //     // Add other details as needed
+        // },
         // Add more blog posts similarly
     ];
 
@@ -61,7 +61,7 @@ const BlogPage = () => {
         <>
             <NavbarWhite />
             <div className="pt-28">
-                <GenCarousel images={images} />
+                {/* <GenCarousel images={images} /> */}
             </div>
             <div className="text  mb-12 py-10 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>

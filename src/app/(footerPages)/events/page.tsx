@@ -11,19 +11,18 @@ const ServicesPage = () => {
     const services = [
         {
             heading: 'Theme parties',
-            description: 'Do you need to reward your stellar leadership team and incentivize them to work together to achieve even more? Planning a corporate event is key. An investment in your company culture is an investment in your company. The return on investment is indisputable. Your employees will feel validated resulting in better quality output. Personal connections are cultivated leading to better work product and ownership. You plant seeds for creativity beyond the proverbial box improving your bottom line. We can help you curate a high touch point corporate event that is intentional, authentic and impactful.',
-            buttonText: 'Learn More',
+            description: 'We believe that every celebration should be a unique reflection of your personality and style. These theme parties are designed to elevate your events into extraordinary, immersive experiences that leave lasting memories',
             image: '/work1.jpg', // Replace with your image URL
         },
         {
-            heading: 'Wedding & Reception',
-            description: 'Want to throw the dream weddings of all dreams in the most beautiful locations around the world? This is what we do. Create once in a lifetime experiences - not just for our couples, but their guests as well. We hear from a lot of wedding guests, that the weddings we produce create some of the best memories of their lives. It’s a privilege to work with clients who want to share these moments with their friends and loved ones.',
+            heading: 'Celeb inspired Weddings',
+            description: 'Step into the magical realm of South Indian elegance, inspired by the style of your favorite celebrity.  Picture yourself exchanging vows surrounded by beautiful flowers and grand venues that reflect the sophistication you admire. Under gentle lights and soothing music, your love story shines bright, just like the ones you admire ',
             buttonText: 'Discover',
             image: '/work2.jpg', // Replace with your image URL
         },
         {
             heading: 'Destination Weddings',
-            description: 'Want to throw the dream weddings of all dreams in the most beautiful locations around the world? This is what we do. Create once in a lifetime experiences - not just for our couples, but their guests as well. We hear from a lot of wedding guests, that the weddings we produce create some of the best memories of their lives. It’s a privilege to work with clients who want to share these moments with their friends and loved ones.',
+            description: 'Embark on a journey to say "I do" in a destination as unique as your love story.Diamol specializes in curating extraordinary destination weddings that transcend boundaries and create memories to last a lifetime.',
             buttonText: 'Discover',
             image: '/work3.jpg', // Replace with your image URL
         },
@@ -32,6 +31,12 @@ const ServicesPage = () => {
             description: 'Want to throw the dream weddings of all dreams in the most beautiful locations around the world? This is what we do. Create once in a lifetime experiences - not just for our couples, but their guests as well. We hear from a lot of wedding guests, that the weddings we produce create some of the best memories of their lives. It’s a privilege to work with clients who want to share these moments with their friends and loved ones.',
             buttonText: 'Discover',
             image: '/work4.jpg', // Replace with your image URL
+        },
+        {
+            heading: 'Customised Weddings',
+            description: 'Your journey to forever begins here.  Enjoy the magic of your day while we take care of the details. Our experienced team ensures that your wedding and reception flow seamlessly, allowing you to savour every moment without worry.',
+            buttonText: 'Discover',
+            image: '/work2.jpg', // Replace with your image URL
         },
         // Add more services as needed
     ];
@@ -44,13 +49,13 @@ const ServicesPage = () => {
         <>
             <NavbarWhite />
             <div className="pt-28">
-                <GenCarousel images={images} />
+                {/* <GenCarousel images={images} /> */}
             </div>
             <div className="text mb-12  py-10 text-center flex-col flex space-y-3">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     Events
                 </div>
-                <div className='text-2xl font-light'>Discover what we offer for your needs</div>
+                <div className='text-2xl font-light'>Where every details spark joy</div>
             </div>
 
             <div className="font-roboto ">

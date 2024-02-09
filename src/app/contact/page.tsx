@@ -35,7 +35,7 @@ export default function Contact() {
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     Contact Us
                 </div>
-                <div className='text-2xl font-light'>Let's get into touch</div>
+                <div className='text-2xl font-light'>And get your free quote now!</div>
             </div>
 
             {/* Contact Section */}
@@ -51,7 +51,7 @@ export default function Contact() {
                                 <IoCall />
                             </div>
                             <div className="call">
-                                <b>IN </b> <a href="tel:+13239999988">+1 (323)999-9988</a>
+                                <b>IN </b> <a href="tel :+91 93478234578">+91 93478234578</a>
                             </div>
                         </p>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                                     <IoLogoWhatsapp />
                                 </div>
                                 <span>
-                                    Add WhatsApp
+                                 +91 9347823457
                                 </span>
                             </a>
                         </p>
@@ -72,7 +72,7 @@ export default function Contact() {
                                     <GrMail />
                                 </div>
                                 <span>
-                                    diamolfounder@contact.com
+                                info@diamol.in
                                 </span>
                             </a>
                         </p>
@@ -84,7 +84,7 @@ export default function Contact() {
                                     <FaHome />
                                 </div>
                                 <span>
-                                    Vijayawada Andhra Pradesh, India
+                                Film Colony, Vijayawada Andhra Pradesh, India 
                                 </span>
                             </a>
                         </p>

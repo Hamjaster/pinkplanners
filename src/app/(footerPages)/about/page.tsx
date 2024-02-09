@@ -79,24 +79,23 @@ export default function page() {
         <div className='text-black'>
             <NavbarWhite />
             <div className="pt-28">
-                <GenCarousel images={images} />
+                {/* <GenCarousel images={images} /> */}
             </div>
 
             <div className="text mb-12 py-10 text-center flex-col flex space-y-1">
                 <div className={`" ${dancing.className} text-6xl tracking-wide font-bold"`}>
                     About Us
                 </div>
-                <div className='text-2xl font-light'>Explore more about us</div>
+                <div className='text-2xl font-light'>Explore Diamol here</div>
             </div>
 
             {/* Info */}
             <div className="quote  my-24 text-center space-y-5 w-11/12 mx-auto">
                 <div className="text-3xl sm:text-5xl leading-tight font-semibold ">
-                    We Don’t Simply Plan Events –
-                    We Craft Extraordinary Experiences.
+                Your Vision, Our Expertise - Unveiling Extraordinary Events with Diamol
                 </div>
                 <div className='text-base sm:text-lg w-11/12 sm:w-9/12 mx-auto'>
-                    At JUGS, we set out to create exceptional corporate events that exceed expectations and empower both our clients and our team. We embrace challenges with passion and commit to realising every big dream trusted to us.
+                Be inspired by our creative décor solutions
                 </div>
 
                 {/* WhyUS cards */}
@@ -146,16 +145,15 @@ export default function page() {
                 <div className="w-full lg:w-1/2 lg:pl-12">
 
                     <div className="text-center lg:text-left">
-                        <h2 className={`" text-3xl sm:text-5xl font-semibold mb-4 "`}>Our Core Values</h2>
+                        <h2 className={`" text-3xl sm:text-5xl font-semibold mb-4 "`}>We believe in:</h2>
                         <p className="text-base sm:text-lg space-y-2 mb-3 sm:mb-6">
                             <div>
                                 Guided by our core values, we are able to consistently surpass client expectations – empowering our team along the way.
                             </div>
                             <ul className="lg:list-disc ml-4">
-                                <li>We nurture potential</li>
-                                <li>We collaborate and respect</li>
-                                <li>We empower with integrity</li>
-                                <li>We thrive with fun</li>
+                                <li>Unparalleled Attention to Detail</li>
+                                <li>Seamless Execution, Stress-Free Experience</li>
+                                <li>Tailoring Dreams into Reality</li>
                             </ul>
 
                         </p>
@@ -174,16 +172,16 @@ export default function page() {
                     {/* Left Section */}
                     <div className="text-center w-full mx-auto lg:text-left lg:mr-8">
                         <h2 className="text-4xl lg:text-5xl font-semibold text-gray-200 mb-2">
-                            Get in Touch
+                        Still Confused 
                         </h2>
                         <p className="text-sm lg:text-base text-gray-400 mb-4">
-                            Have a question or want to collaborate?
+                        Explore more and get decided 
                         </p>
                         <a
                             href="/contact" // Replace with your contact page link
                             className="text-blue-700 hover:text-blue-600 transition duration-300"
                         >
-                            Contact Us
+                           Click here
                         </a>
                     </div>
 
@@ -193,16 +191,16 @@ export default function page() {
                     {/* Right Section */}
                     <div className="text-center w-full mx-auto lg:text-left lg:ml-8 mt-6 lg:mt-0">
                         <h2 className="text-4xl lg:text-5xl font-semibold text-gray-200 mb-2">
-                            Let's Collaborate
+                        Let's Create  
                         </h2>
                         <p className="text-sm lg:text-base text-gray-400 mb-4">
-                            Explore partnership opportunities.
+                        Your Perfect Day Together
                         </p>
                         <a
                             href="/partnership" // Replace with your partnership page link
                             className="text-blue-700 hover:text-blue-600 transition duration-300"
                         >
-                            Partner With Us
+                            Contact Us
                         </a>
                     </div>
 

@@ -20,7 +20,7 @@ export default function WhyUs() {
                     </div>
                     <div className="p-4 space-y-8">
                         <h3 className="text-xl  relative font-semibold mb-2 ">Expertise & Experience
-                            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
+                            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
                         </h3>
                         <p className="text-gray-600 font-mono text-sm" >
                             With more than 8 years, we have versatile experience with the industry and understand the inside know-hows and we have cracked the code of being able to apprehend client's emotional connect to any event, which we meet bang on, with their expectations.
@@ -35,7 +35,7 @@ export default function WhyUs() {
                     </div>
                     <div className="p-4 space-y-8">
                         <h3 className="text-xl  relative font-semibold mb-2 ">Attention to Details
-                            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
+                            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
                         </h3>
                         <p className="text-gray-600 font-mono text-sm" >
                             Smallest and Minutest details are taken into consideration when the event is conceptualized. We are known for delivering nothing but a perfect and memorable event for our clients.
@@ -51,7 +51,7 @@ export default function WhyUs() {
                     <div className="p-4 space-y-8">
                         <h3 className="text-xl  relative font-semibold mb-2 ">Value for Money
 
-                            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
+                            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
                         </h3>
                         <p className="text-gray-600 font-mono text-sm" >
                             Whatever Budget is there for the client, we make sure we give them 100% in that, and sometimes even more. We believe that be it a small or big budget, the emotional aspect always remain the same.
@@ -68,7 +68,7 @@ export default function WhyUs() {
                     </div>
                     <div className="p-4 space-y-8">
                         <h3 className="text-xl  relative font-semibold mb-2 ">Transparent
-                            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
+                            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2  w-1/2 h-1 bg-black"></div>
                         </h3>
                         <p className="text-gray-600 font-mono text-sm" >
                             When planning an event, we make sure that our client is in every loop of the planning and thats our biggest asset. Transparency is our valued possession and we follow it at every step.
