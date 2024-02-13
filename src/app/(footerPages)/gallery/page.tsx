@@ -79,7 +79,7 @@ const PictureGallery = () => {
                     </ResponsiveMasonry>
                 </div>
             </div>
-
+            <CTA />
         </>
     );
 };

@@ -11,6 +11,7 @@ import NavbarWhite from '../../../components/NavbarWhite'
 import Image from 'next/image';
 import Gallery from '../../../components/Gallery/Gallery';
 import { GenCarousel } from '../../../utils';
+import CTA from '../../../components/CTA';
 
 export default function page() {
 
@@ -248,7 +249,7 @@ export default function page() {
                 </div>
             </div>
 
-
+            <CTA />
         </div>
     )
 }

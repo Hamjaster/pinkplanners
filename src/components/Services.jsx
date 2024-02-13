@@ -8,6 +8,7 @@ export const services = {
     wedding: ["Weddings", "Whispers of Romance, Echoes of Elegance", 'Explore Diamol Weddings', "./work6.jpg"],
     destination: ["Destinations", "Beyond expectations, beyond borders ", 'Explore Destination Events', "./destination-weddings.jpg"],
     theme: ["Theme Parties", "Where Creativity Meets Atmosphere", 'Explore Theme Parties', "./work9.jpg"],
+    Celebinspiredwed: ["Celeb inspired weds", "Get your Weeds as a celebrity", 'Explore celeb wedings', "./work9.jpg"],
 }
 export default function Services() {
 
@@ -26,6 +27,7 @@ export default function Services() {
                     <li onClick={() => setService('theme')} className={` ${service === "theme" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Theme Parties</li>
 
                     <li onClick={() => setService('wedding')} className={` ${service === "wedding" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Weddings</li>
+                    <li onClick={() => setService('Celebinspiredwed')} className={` ${service ==="Celebinspiredwed" ? " bg-gray-100 text-black " : " text-gray-400 "} pl-4 pr-8 sm:pl-7 pl-4 pr-8 sm:pr-28 uppercase cursor-pointer  tracking-widest font-medium`}>Celeb inspired weds</li>
 
 
 
@@ -37,7 +39,6 @@ export default function Services() {
                         </div>
                         <div className="text-xl underline cursor-pointer">{services[service][2]}</div>
                     </div>
-
                 </ul>
 
                 <div className="flex md:hidden items-start w-full py-8 flex-col justify-center space-y-3  h-[150%] mx-8 bg-white">

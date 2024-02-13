@@ -12,6 +12,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
 import { GrMail } from 'react-icons/gr';
 import { Arizonia } from 'next/font/google'
+import CTA from '../../components/CTA';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function Contact() {
@@ -204,7 +205,7 @@ export default function Contact() {
                 </div>
 
             </div>
-
+            <CTA />
         </>
     )
 }

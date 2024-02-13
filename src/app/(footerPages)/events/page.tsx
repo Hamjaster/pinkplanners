@@ -5,6 +5,7 @@ import NavbarWhite from '../../../components/NavbarWhite'
 import Footer from '../../../components/Footer';
 import { Arizonia } from 'next/font/google'
 import { GenCarousel } from '../../../utils';
+import CTA from '../../../components/CTA';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 const ServicesPage = () => {
@@ -26,12 +27,7 @@ const ServicesPage = () => {
             buttonText: 'Discover',
             image: '/work3.jpg', // Replace with your image URL
         },
-        {
-            heading: 'Explore more! ',
-            description: 'Want to throw the dream weddings of all dreams in the most beautiful locations around the world? This is what we do. Create once in a lifetime experiences - not just for our couples, but their guests as well. We hear from a lot of wedding guests, that the weddings we produce create some of the best memories of their lives. It’s a privilege to work with clients who want to share these moments with their friends and loved ones.',
-            buttonText: 'Discover',
-            image: '/work4.jpg', // Replace with your image URL
-        },
+
         {
             heading: 'Customised Weddings',
             description: 'Your journey to forever begins here.  Enjoy the magic of your day while we take care of the details. Our experienced team ensures that your wedding and reception flow seamlessly, allowing you to savour every moment without worry.',
@@ -85,7 +81,7 @@ const ServicesPage = () => {
                     ))}
                 </div>
             </div>
-
+            <CTA />
         </>
     );
 };

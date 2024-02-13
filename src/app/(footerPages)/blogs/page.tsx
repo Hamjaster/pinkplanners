@@ -6,6 +6,7 @@ const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import NavbarWhite from '../../../components/NavbarWhite'
 import Footer from '../../../components/Footer';
 import { GenCarousel } from '../../../utils';
+import CTA from '../../../components/CTA';
 
 const BlogPage = () => {
     const blogPosts = [
@@ -95,7 +96,7 @@ const BlogPage = () => {
                     </div>
                 </div>
             </div>
-
+            <CTA />
         </>
     );
 };

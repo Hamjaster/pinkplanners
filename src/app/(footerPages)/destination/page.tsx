@@ -3,6 +3,7 @@ import Footer from '../../../components/Footer';
 import NavbarWhite from '../../../components/NavbarWhite';
 import { Arizonia } from 'next/font/google'
 import { GenCarousel } from '../../../utils';
+import CTA from '../../../components/CTA';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function page() {
@@ -75,7 +76,7 @@ export default function page() {
                     ))}
                 </div>
             </div>
-
+            <CTA />
         </>
     )
 }
