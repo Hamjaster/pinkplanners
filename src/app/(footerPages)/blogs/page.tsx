@@ -7,7 +7,13 @@ import NavbarWhite from '../../../components/NavbarWhite'
 import Footer from '../../../components/Footer';
 import { GenCarousel } from '../../../utils';
 import CTA from '../../../components/CTA';
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: 'Blogs',
+    description: 'Discover what we offer for your needs. Your questions - our answers',
+  }
+  
 const BlogPage = () => {
     const blogPosts = [
         {

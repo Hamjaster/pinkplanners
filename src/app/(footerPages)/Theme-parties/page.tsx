@@ -4,6 +4,13 @@ import Navbar from '../../../components/NavbarWhite'
 import { GenCarousel } from '../../../utils'
 import Link from 'next/link'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Wedding theme parties',
+    description: 'Discover the perfect theme party ideas for your dream wedding at our website.',
+  }
+  
 export default function page() {
     const images = [
         "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"

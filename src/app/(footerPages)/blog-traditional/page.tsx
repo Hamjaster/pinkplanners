@@ -3,6 +3,13 @@ import Navbar from '../../../components/NavbarWhite'
 import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Traditional weddings in South India',
+    description: 'Traditional South Indian weddings embody not just the union of two souls but a celebration of love, family, and cultural heritage passed down through generations. ',
+  }
+  
 export default function page() {
   return (
     <>

@@ -12,6 +12,14 @@ import Image from 'next/image';
 import Gallery from '../../../components/Gallery/Gallery';
 import { GenCarousel } from '../../../utils';
 import CTA from '../../../components/CTA';
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Guided by our core values, we are able to consistently surpass client expectations – empowering our team along the way.',
+}
+ 
+
 
 export default function page() {
 
@@ -77,6 +85,9 @@ export default function page() {
     ]
 
     return (
+  
+     <>
+
         <div className='text-black'>
             <NavbarWhite />
             <div className="pt-28">
@@ -251,5 +262,7 @@ export default function page() {
 
             <CTA />
         </div>
+    </>
+    
     )
 }

@@ -5,7 +5,13 @@ import { Arizonia } from 'next/font/google'
 import { GenCarousel } from '../../../utils';
 import CTA from '../../../components/CTA';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: 'Diamol destinations',
+    description: 'Discover the hidden gems of your dream destination with us',
+  }
+  
 export default function page() {
     const cards = [
         {

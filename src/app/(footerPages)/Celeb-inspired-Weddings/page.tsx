@@ -4,6 +4,12 @@ import Navbar from '../../../components/NavbarWhite'
 import { GenCarousel } from '../../../utils'
 import Link from 'next/link'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Celeb Inspired Weddings',
+    description: "Our offerings are personalized to fit your vision and budget, whether you're planning a grand celebration or an intimate gathering like your ideal.",
+  }
 export default function page() {
     const images = [
         "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"

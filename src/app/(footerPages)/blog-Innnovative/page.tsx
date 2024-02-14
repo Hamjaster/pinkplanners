@@ -3,6 +3,13 @@ import Navbar from '../../../components/NavbarWhite'
 import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Innovative Wedding Entertainment Ideas',
+    description: 'Make your wedding a memorable experience with our collection of innovative and exciting entertainment ideas. ',
+  }
+  
 export default function page() {
   return (
     <>

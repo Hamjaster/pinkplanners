@@ -1,5 +1,3 @@
-"use client"
-// components/PictureGallery.js
 
 import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
@@ -9,6 +7,12 @@ import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA';
 import { GenCarousel } from '../../../utils';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
+import {MansoryGallery} from '../../../components/MosonryGallery'
+export const metadata: Metadata = {
+    title: 'Gallery',
+    description: 'Experience the magic of our event management company through our gallery, where extraordinary moments come to life in stunning visuals.',
+  }
 
 const PictureGallery = () => {
     // Replace these URLs with your image URLs
@@ -55,29 +59,7 @@ const PictureGallery = () => {
                     <div className='text-2xl font-light'>Don't beleive us, see our work</div>
                 </div>
                 {/* gallery */}
-                <div className="gallery mx-5">
-                    <ResponsiveMasonry
-                        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-                    >
-                        <Masonry gutter="1.25rem">
-                            {images.map((image, index) => (
-                                <div key={index} className="relative cursor-pointer group">
-                                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70  transition duration-300 ease-in-out flex justify-center items-center">
-                                        {/* <p className="text-white text-2xl font-extralight uppercase text-center">Your Text Here</p> */}
-                                    </div>
-                                    <Image
-                                        src={image}
-                                        alt={`Image ${index + 1}`}
-                                        layout="responsive"
-                                        width={300}
-                                        height={200}
-                                        className=""
-                                    />
-                                </div>
-                            ))}
-                        </Masonry>
-                    </ResponsiveMasonry>
-                </div>
+                <MansoryGallery/>
             </div>
             <CTA />
         </>

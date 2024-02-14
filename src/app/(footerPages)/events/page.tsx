@@ -7,7 +7,13 @@ import { Arizonia } from 'next/font/google'
 import { GenCarousel } from '../../../utils';
 import CTA from '../../../components/CTA';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: 'Diamol - Events as you imagine',
+    description: 'Unlock the world of flawless event management with our captivating home page.',
+  }
+  
 const ServicesPage = () => {
     const services = [
         {

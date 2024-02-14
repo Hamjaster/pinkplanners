@@ -3,6 +3,13 @@ import Navbar from '../../../components/NavbarWhite'
 import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Wedding Destinations in South India',
+  description: "Embark on a journey through South India's enchanting locales, each offering a unique backdrop for your dream  weddings",
+}
+
 export default function page() {
   return (
     <>
