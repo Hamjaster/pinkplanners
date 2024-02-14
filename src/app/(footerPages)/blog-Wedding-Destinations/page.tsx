@@ -4,6 +4,13 @@ import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
+import Image from 'next/image'
+import coorg from './IMAGES/coorg.jpg'
+import goa from './IMAGES/goa.jpg'
+import kerala from './IMAGES/kerala.jpg'
+import pond from './IMAGES/pond.jpg'
+import munar from './IMAGES/munar.jpg'
+import udaipur from './IMAGES/udaipur.jpg'
 
 export const metadata: Metadata = {
   title: 'Wedding Destinations in South India',
@@ -33,7 +40,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="grid mx-36 grid-cols-1 sm:grid-cols-6 gap-8">
+      <div className="grid md:mx-36 grid-cols-1 sm:grid-cols-6 gap-8">
 
         {/* First line */}
         <div className="col-span-1 sm:col-span-4 ">
@@ -42,24 +49,30 @@ export default function page() {
             <p className="text-gray-700 mb-4">
             {destinations[0].description}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={kerala}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
         <div className="col-span-1 sm:col-span-2 ">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 h-[600px] rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold mb-4">{destinations[1].name}</h2>
             <p className="text-gray-700 mb-4">
             {destinations[1].description}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={udaipur}
+                    className='mt-20'
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
 
@@ -70,11 +83,14 @@ export default function page() {
             <p className="text-gray-700 mb-4">
             {destinations[2].description}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={coorg}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
         <div className="col-span-1 sm:col-span-3   ">
@@ -83,11 +99,14 @@ export default function page() {
             <p className="text-gray-700 mb-4">
               {destinations[3].description}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={goa}
+                    className='md:h-[460px] md:w-[600px]'
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
 
@@ -99,41 +118,34 @@ export default function page() {
             <p className="text-gray-700 mb-4">
             {destinations[4].description}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={pond}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
-        <div className="col-span-1 sm:col-span-2 ">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+        <div className="col-span-1 ] sm:col-span-2 ">
+          <div className="bg-white h-[480px] p-6 rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold mb-4">{destinations[5].name}</h2>
             <p className="text-gray-700 mb-4">
             {destinations[5].description}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={munar}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
 
-        {/* Second line */}
-        <div className="col-span-1 sm:col-span-3 ">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold mb-4">{destinations[6].name}</h2>
-            <p className="text-gray-700 mb-4">
-            {destinations[6].description}
-            </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
-          </div>
-        </div>
+      
    
       </div>
 
