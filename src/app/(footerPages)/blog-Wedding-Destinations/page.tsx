@@ -11,93 +11,134 @@ export const metadata: Metadata = {
 }
 
 export default function page() {
+  const destinations = [
+    { name: "Kerala Backwaters", description: "Experience the serenity of Kerala's backwaters, where traditional houseboats or lakeside resorts provide a tranquil setting for exchanging vows." },
+    { name: "Udaipur, Rajasthan", description: "Revel in regal splendor in Udaipur, known as the 'City of Lakes,' where majestic palaces offer breathtaking views of shimmering waters and lush gardens." },
+    { name: "Coorg, Karnataka", description: "Find solace amidst Coorg's misty hills and verdant coffee plantations, ideal for intimate celebrations immersed in natural beauty." },
+    { name: "Goa Beaches", description: "Embrace the romance of Goa's pristine beaches, where golden sands and turquoise waters create a picturesque backdrop for seaside ceremonies." },
+    { name: "Pondicherry French Quarter", description: "Transport guests to a bygone era in Pondicherry's charming French Quarter, characterized by colonial architecture and quaint streets perfect for intimate gatherings." },
+    { name: "Munnar Tea Gardens", description: "Lose yourselves in the tranquility of Munnar's tea gardens, where rolling hills and lush landscapes offer a fairy-tale setting for your special day." },
+    { name: "Hampi, Karnataka", description: "Immerse yourselves in history amidst Hampi's ancient ruins and majestic temples, providing a culturally rich backdrop for a one-of-a-kind wedding celebration." },
+  ];
   return (
     <>
       <Navbar />
       <div className='h-20'></div>
       <div className="text mb-12  py-10 text-center flex-col flex space-y-3">
         <div className={`" ${dancing.className} text-4xl md:text-6xl tracking-wide font-bold"`}>
-        Wedding Destinations in South India
+        Traditional South Indian Wedding Rituals
         </div>
-        <div className='text-2xl font-light'>Here are some innovative suggestions to craft your special day:</div>
-        <div className='text-4xl font-normal p-6'>Embark on a journey through South India's enchanting locales, each offering a unique backdrop for your dream wedding:
-</div>
+        <div className='w-9/12 mx-auto text-lg font-light'>
+        In South India, weddings aren't merely ceremonies; they're elaborate celebrations steeped in cultural heritage and ancient traditions. Traditional South Indian wedding rituals are a beautiful amalgamation of customs and symbolisms, reflecting the region's profound values.
+        </div>
       </div>
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-       Kerala Backwaters: Experience the serenity of Kerala's backwaters, where traditional houseboats or lakeside resorts provide a tranquil setting for exchanging vows.
 
+      <div className="grid mx-36 grid-cols-1 sm:grid-cols-6 gap-8">
+
+        {/* First line */}
+        <div className="col-span-1 sm:col-span-4 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[0].name}</h2>
+            <p className="text-gray-700 mb-4">
+            {destinations[0].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
+        <div className="col-span-1 sm:col-span-2 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[1].name}</h2>
+            <p className="text-gray-700 mb-4">
+            {destinations[1].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
+
+        {/* Second line */}
+        <div className="col-span-1 sm:col-span-3 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[2].name}</h2>
+            <p className="text-gray-700 mb-4">
+            {destinations[2].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
+        <div className="col-span-1 sm:col-span-3   ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[3].name}</h2>
+            <p className="text-gray-700 mb-4">
+              {destinations[3].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Udaipur, Rajasthan: Revel in regal splendor in Udaipur, known as the "City of Lakes," where majestic palaces offer breathtaking views of shimmering waters and lush gardens.
+
+                
+        {/* First line */}
+        <div className="col-span-1 sm:col-span-4 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[4].name}</h2>
+            <p className="text-gray-700 mb-4">
+            {destinations[4].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
+        <div className="col-span-1 sm:col-span-2 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[5].name}</h2>
+            <p className="text-gray-700 mb-4">
+            {destinations[5].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Coorg, Karnataka: Find solace amidst Coorg's misty hills and verdant coffee plantations, ideal for intimate celebrations immersed in natural beauty.
+
+        {/* Second line */}
+        <div className="col-span-1 sm:col-span-3 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{destinations[6].name}</h2>
+            <p className="text-gray-700 mb-4">
+            {destinations[6].description}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Goa Beaches: Embrace the romance of Goa's pristine beaches, where golden sands and turquoise waters create a picturesque backdrop for seaside ceremonies.
-        </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Pondicherry French Quarter: Transport guests to a bygone era in Pondicherry's charming French Quarter, characterized by colonial architecture and quaint streets perfect for intimate gatherings.
-        </div>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Munnar Tea Gardens: Lose yourselves in the tranquility of Munnar's tea gardens, where rolling hills and lush landscapes offer a fairy-tale setting for your special day.
-        </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Hampi, Karnataka: Immerse yourselves in history amidst Hampi's ancient ruins and majestic temples, providing a culturally rich backdrop for a one-of-a-kind wedding celebration.
-        </div>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Pondicherry French Quarter: Transport guests to a bygone era in Pondicherry's charming French Quarter, characterized by colonial architecture and quaint streets perfect for intimate gatherings.
-        </div>
-        </div>
-        <div className='text-4xl font-normal p-6'>Each destination in South India offers a blend of culture, natural beauty, and charm, promising an unforgettable wedding tailored to your desires.
-        </div>
-        <CTA/>
+   
+      </div>
+
+
+      <CTA/>
     </>
   )
 }

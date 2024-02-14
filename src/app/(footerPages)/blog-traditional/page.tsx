@@ -11,6 +11,23 @@ export const metadata: Metadata = {
   }
   
 export default function page() {
+  const headings = [
+    "Muhurtam",
+    "Kanyadhanam",
+    "Exchange of Garlands",
+    "Saptapadi",
+    "Mangal Sutra Dhrana",
+  ];
+
+  const descriptions = [
+    "Among the most significant rituals is the 'Muhurtham,' marking the auspicious moment for the marriage ceremony, determined by celestial alignments.",
+    "The 'Kanyadaanam' symbolizes the bride's parents entrusting her to the groom, signifying their blessings for her future happiness.",
+    "The exchange of garlands, or 'Jaimala,' signifies mutual acceptance and union.",
+    "The 'Saptapadi' involves taking seven sacred steps together, representing their journey through life as companions.",
+    "The 'Mangalsutra Dharana' where the groom adorns the bride with a sacred thread.",
+  ];
+
+
   return (
     <>
       <Navbar />
@@ -19,44 +36,71 @@ export default function page() {
         <div className={`" ${dancing.className} text-4xl md:text-6xl tracking-wide font-bold"`}>
         Traditional South Indian Wedding Rituals
         </div>
-      </div>
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
+        <div className='w-9/12 mx-auto text-lg font-light'>
         In South India, weddings aren't merely ceremonies; they're elaborate celebrations steeped in cultural heritage and ancient traditions. Traditional South Indian wedding rituals are a beautiful amalgamation of customs and symbolisms, reflecting the region's profound values.
         </div>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
+      </div>
+
+      <div className="grid mx-36 grid-cols-1 sm:grid-cols-6 gap-8">
+        {/* First line */}
+        <div className="col-span-1 sm:col-span-4 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{headings[0]}</h2>
+            <p className="text-gray-700 mb-4">
+             {descriptions[0]}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
+        <div className="col-span-1 sm:col-span-2 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{headings[1]}</h2>
+            <p className="text-gray-700 mb-4">
+            {descriptions[1]}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
+
+        {/* Second line */}
+        <div className="col-span-1 sm:col-span-3 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{headings[2]}</h2>
+            <p className="text-gray-700 mb-4">
+             {descriptions[2]} 
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Among the most significant rituals is the "Muhurtham," marking the auspicious moment for the marriage ceremony, determined by celestial alignments. The "Kanyadaanam" symbolizes the bride's parents entrusting her to the groom, signifying their blessings for her future happiness.
+        <div className="col-span-1 sm:col-span-3   ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{headings[3]}</h2>
+            <p className="text-gray-700 mb-4">
+              {descriptions[3]}
+            </p>
+            <div style={{
+              backgroundImage : 'url(https://picsum.photos/200)'
+            }} className='bg-cover bg-center w-full h-44' 
+            >
+            </div>
+          </div>
         </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        The exchange of garlands, or "Jaimala," signifies mutual acceptance and union, while the "Saptapadi" involves taking seven sacred steps together, representing their journey through life as companions.
-        </div>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        </div>
-        {/*  part  */}
-      <div className='flex flex-1 m-10 shadow-2xl p-4'>
-        <div>
-          <img className='rounded-lg' src='/work1.jpg'/>
-        </div>
-        <div className='w-[70%] text-4xl font-normal p-6 flex align-middle justify-center'>
-        Other rituals include the "Mangalsutra Dharana," where the groom adorns the bride with a sacred thread, and the "Sindoor Daanam," where he applies vermilion in her hair parting, symbolizing her marital status.
-        </div>
-        </div>
-        <div className='text-4xl font-normal p-6'>Traditional South Indian weddings embody not just the union of two souls but a celebration of love, family, and cultural heritage passed down through generations.</div>
-        <CTA/>
+      </div>
+
+
+      <CTA/>
     </>
   )
 }
