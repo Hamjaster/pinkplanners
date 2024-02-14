@@ -5,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import logo from './Logo.png'
+import Image from 'next/image'
 // import logo from '../../public/logo.jpg'
 
 export default function Navbar() {
@@ -33,9 +34,12 @@ export default function Navbar() {
         <>
 
             <div className={`${isSticky ? "navbar-white shadow-xl" : ""} hidden transition-all duration-300 lg:flex fixed z-50 w-full text-md bg-transparent text-white space-x-4 flex-row justify-evenly py-12  items-center bg-gradient-to-b from-black to-transparent`}>
-                <div href={'/'}>
-                    <img src='' typeof='.png' className='' />
-                </div>
+                <Image
+                    src={logo}
+                    width={100}
+                    height={100}
+                    alt="Picture of the author"
+                />
 
                 <div className="items hidden [&>div]:cursor-pointer  flex-col space-y-1 sm:space-y-0 lg:flex sm:space-x-8 sm:flex-row justify-evenly items-start sm:items-center [&>*]:uppercase ">
 

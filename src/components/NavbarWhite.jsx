@@ -4,6 +4,8 @@ import { VscMenu } from 'react-icons/vsc'
 import { AiOutlineClose } from 'react-icons/ai'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import logo from './Logo.png'
 // import logo from '../images/logo.jpg'
 
 export default function Navbar() {
@@ -33,7 +35,12 @@ export default function Navbar() {
             <div className={`transition-all z-50 fixed shadow-lg hidden lg:flex duration-300 w-full text-md bg-transparent bg-white text-black space-x-4 flex-row justify-evenly py-6 items-center `}>
 
                 <Link href={'/'}>
-                    <div className={`item text-2xl text-black font-bold `}>Diamol</div>
+                <Image
+                    src={logo}
+                    width={100}
+                    height={100}
+                    alt="Picture of the author"
+                />
                 </Link>
 
                 <div className="items hidden [&>div]:cursor-pointer  flex-col space-y-1 sm:space-y-0 lg:flex sm:space-x-8 sm:flex-row justify-evenly items-start sm:items-center [&>*]:uppercase ">
