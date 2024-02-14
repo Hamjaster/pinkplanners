@@ -4,6 +4,12 @@ import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
+import muhurtham from './images/Muhurtham.jpg'
+import dhanam from './images/dhanam.jpg'
+import garlands from './images/garlands.jpg'
+import steps from './images/steps.jpg'
+import sutra from './images/sutra.jpg'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
     title: 'Traditional weddings in South India',
@@ -41,7 +47,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="grid mx-36 grid-cols-1 sm:grid-cols-6 gap-8">
+      <div className="grid md:mx-36 grid-cols-1 sm:grid-cols-6 gap-8">
         {/* First line */}
         <div className="col-span-1 sm:col-span-4 ">
           <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -49,11 +55,14 @@ export default function page() {
             <p className="text-gray-700 mb-4">
              {descriptions[0]}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={muhurtham}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
         <div className="col-span-1 sm:col-span-2 ">
@@ -62,12 +71,31 @@ export default function page() {
             <p className="text-gray-700 mb-4">
             {descriptions[1]}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={dhanam}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
+          <div className="col-span-1 sm:col-span-4 ">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">{headings[4]}</h2>
+            <p className="text-gray-700 mb-4">
+             {descriptions[4]}
+            </p>
+            <center>
+              <Image
+                    src={sutra}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
+          </div>
+        </div>
         </div>
 
         {/* Second line */}
@@ -77,11 +105,14 @@ export default function page() {
             <p className="text-gray-700 mb-4">
              {descriptions[2]} 
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={garlands}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
         <div className="col-span-1 sm:col-span-3   ">
@@ -90,13 +121,17 @@ export default function page() {
             <p className="text-gray-700 mb-4">
               {descriptions[3]}
             </p>
-            <div style={{
-              backgroundImage : 'url(https://picsum.photos/200)'
-            }} className='bg-cover bg-center w-full h-44' 
-            >
-            </div>
+            <center>
+              <Image
+                    src={steps}
+                    className=''
+                    alt="Picture of the author"
+                />
+
+            </center>
           </div>
         </div>
+      
       </div>
 
 
