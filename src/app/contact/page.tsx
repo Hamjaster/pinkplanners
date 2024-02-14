@@ -14,8 +14,8 @@ import { Arizonia } from "next/font/google";
 import CTA from "../../components/CTA";
 import Head from "next/head";
 const dancing = Arizonia({ subsets: ["latin"], weight: ["400"] });
-import { Metadata } from "next";
 import ContactClient from "../../components/ContactCient";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact us - Diamol",
