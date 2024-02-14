@@ -8,6 +8,7 @@ import Footer from '../../../components/Footer';
 import { GenCarousel } from '../../../utils';
 import CTA from '../../../components/CTA';
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'Blogs',
@@ -19,19 +20,22 @@ const BlogPage = () => {
         {
             title: 'Traditional wedding',
             date: 'Traditional South Indian Wedding Rituals',
-            img: "./work3.jpg"
+            img: "./work3.jpg",
+            to:"/blog-traditional"
             // Add other details as needed
         },
         {
             title: 'Innovative wedding',
             date: 'Innovative Wedding Entertainment Ideas',
-            img: "./work4.jpg"
+            img: "./work4.jpg",
+            to:"blog-Innnovative    "
             // Add other details as needed
         },
         {
             title: 'Wedding Destinations',
             date: 'Wedding Destinations in South India',
-            img: "./work5.jpg"
+            img: "./work5.jpg",
+            to:"/blog-Wedding-Destinations"
             // Add other details as needed
         },
         // {
@@ -86,6 +90,7 @@ const BlogPage = () => {
                                 className={`${index % 3 === 0 ? 'col-span-2' : 'col-span-1'
                                     } rounded-lg overflow-hidden cursor-pointer sm:hover:-translate-y-5 duration-500    transition-all  bg-white shadow-md`}
                             >
+                           <Link href={post.to}>
 
                                 <div style={{
                                     backgroundImage: `url(${post.img})`
@@ -97,6 +102,7 @@ const BlogPage = () => {
                                     </div>
                                     {/* Add more details or buttons as needed */}
                                 </div>
+                           </Link>
                             </div>
                         ))}
                     </div>
