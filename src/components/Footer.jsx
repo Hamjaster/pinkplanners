@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
 
             <div className='text-gray-300 text-sm sm:text-base font-extralight flex flex-col sm:flex-row sm:space-x-3 space-y-1 sm:space-y-0 '>
-                <span className=''>© 2023 Diamol Events. All rights reserved.</span>
+                <span className=''>© 2024 Diamol Events. All rights reserved.</span>
 
             </div>
 
