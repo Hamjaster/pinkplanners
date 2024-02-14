@@ -13,6 +13,7 @@ import Link from 'next/link';
 import { GrMail } from 'react-icons/gr';
 import { Arizonia } from 'next/font/google'
 import CTA from '../../components/CTA';
+import Head from 'next/head';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export default function Contact() {
