@@ -4,13 +4,12 @@ import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
-import muhurtham from './images/muhurtham.jpg'
 import dhanam from './images/dhanam.jpg'
 import garlands from './images/garlands.jpg'
 import steps from './images/steps.jpg'
 import sutra from './images/sutra.jpg'
 import Image from 'next/image'
-
+import muhurtham from './images/muhurtham.jpg'
 export const metadata: Metadata = {
     title: 'Traditional weddings in South India',
     description: 'Traditional South Indian weddings embody not just the union of two souls but a celebration of love, family, and cultural heritage passed down through generations. ',

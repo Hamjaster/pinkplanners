@@ -15,11 +15,11 @@ export default function Destinations() {
 
 
                 <div className="parent cursor-pointer shadow-xl  rounded-br-xl rounded-bl-xl">
-                    <div className="bg-cover bg-center image-wrapper h-64" style={{ backgroundImage: `url(${'/work1.jpg'})` }}></div>
+                    <div className="bg-cover bg-center image-wrapper h-64" style={{ backgroundImage: `url(${'/111.jpg'})` }}></div>
                 </div>
 
                 <div className="parent cursor-pointer shadow-xl   rounded-br-xl rounded-bl-xl">
-                    <div className="bg-co ver bg-center image-wrapper h-64" style={{ backgroundImage: `url(${'/1.jpg'})` }}></div>
+                    <div className="bg-co ver bg-center image-wrapper h-64" style={{ backgroundImage: `url(${'/112.jpg'})` }}></div>
                 </div>
 
                 <div className="parent cursor-pointer shadow-xl   rounded-br-xl rounded-bl-xl">
@@ -35,7 +35,7 @@ export default function Destinations() {
                 </div>
 
                 <div className="parent cursor-pointer shadow-xl   rounded-br-xl rounded-bl-xl">
-                    <div className="bg-cover bg-center image-wrapper h-64" style={{ backgroundImage: `url(${'/1.jpg'})` }}></div>
+                    <div className="bg-cover bg-center image-wrapper h-64" style={{ backgroundImage: `url(${'/113.jpg'})` }}></div>
                 </div>
 
 

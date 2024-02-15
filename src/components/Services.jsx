@@ -5,7 +5,7 @@ import { Arizonia } from 'next/font/google'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 
 export const services = {
-    wedding: ["Weddings", "Whispers of Romance, Echoes of Elegance", 'Explore Diamol Weddings', "./work6.jpg"],
+    wedding: ["Weddings", "Whispers of Romance, Echoes of Elegance", 'Explore Diamol Weddings','./12.jpg'],
     destination: ["Destinations", "Beyond expectations, beyond borders ", 'Explore Destination Events', "./destination-weddings.jpg"],
     theme: ["Theme Parties", "Where Creativity Meets Atmosphere", 'Explore Theme Parties', "./work9.jpg"],
     Celebinspiredwed: ["Celeb inspired weds", "Get your Weeds as a celebrity", 'Explore celeb wedings', "./work9.jpg"],
