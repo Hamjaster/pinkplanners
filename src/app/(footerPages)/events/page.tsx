@@ -9,6 +9,7 @@ import CTA from '../../../components/CTA';
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
 import Link from 'next/link';
+import Destinations from './images/6.jpg'
 
 export const metadata: Metadata = {
     title: 'Diamol - Events as you imagine',
@@ -20,7 +21,7 @@ const ServicesPage = () => {
         {
             heading: 'Theme parties',
             description: 'We believe that every celebration should be a unique reflection of your personality and style. These theme parties are designed to elevate your events into extraordinary, immersive experiences that leave lasting memories',
-            image: '/work1.jpg', // Replace with your image URL
+            image: '.', // Replace with your image URL
             to:"/Theme-parties"
 
         },
@@ -28,14 +29,14 @@ const ServicesPage = () => {
             heading: 'Celeb inspired Weddings',
             description: 'Step into the magical realm of South Indian elegance, inspired by the style of your favorite celebrity.  Picture yourself exchanging vows surrounded by beautiful flowers and grand venues that reflect the sophistication you admire. Under gentle lights and soothing music, your love story shines bright, just like the ones you admire ',
             buttonText: 'Discover',
-            image: '/work2.jpg', // Replace with your image URL
+            image: '/wo2.jpg', // Replace with your image URL
             to:"/Celeb-inspired-Weddings"
         },
         {
             heading: 'Destination Weddings',
             description: 'Embark on a journey to say "I do" in a destination as unique as your love story.Diamol specializes in curating extraordinary destination weddings that transcend boundaries and create memories to last a lifetime.',
             buttonText: 'Discover',
-            image: '/work3.jpg', // Replace with your image URL
+            image: Destinations, // Replace with your image URL
             to:"/Destinations"
         },
 

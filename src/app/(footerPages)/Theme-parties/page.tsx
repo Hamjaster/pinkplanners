@@ -79,9 +79,9 @@ export default function page() {
 
                 <Box >
                     <ImageList variant="masonry" cols={3} gap={8}>
-                       <ImageListItem>
+                       {/* <ImageListItem>
                        <Image src={one} alt='kasn'/>
-                       </ImageListItem>
+                       </ImageListItem> */}
                        <ImageListItem>
                        <Image src={t2} alt='kasn'/>
                        </ImageListItem>

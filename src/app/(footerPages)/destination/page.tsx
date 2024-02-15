@@ -15,29 +15,37 @@ export const metadata: Metadata = {
 export default function page() {
     const cards = [
         {
-            image: '/work1.jpg',
-            text: 'Card 1 Text',
+            image: '/dest/kerala.jpg',
+            text: 'Kerala ',
+            desc:"Whispers of 'I do' in God's own land.            "
         },
         {
-            image: '/work2.jpg',
-            text: 'Card 2 Text',
+            image: '/dest/goa.jpg',
+            text: 'Goa',
+            desc:"Beachside vows, Goa's magic flows          "
         },
         {
-            image: '/work3.jpg',
-            text: 'Card 2 Text',
+            image: '/dest/udai.jpeg',
+            text: 'Udaipur',
+            desc:"Your love story, penned in the City of Lakes' timeless beauty"
         },
         {
-            image: '/work4.jpg',
-            text: 'Card 2 Text',
+            image: '/dest/bang.jpeg',
+            text: 'Bangalore',
+            desc:"Garden city vows, where love blooms a new"
+        },
+       
+        {
+            image: '/dest/pond.jpeg',
+            text: 'Pondicherry',
+            desc:"Fairytale affirm in French Riviera's embrace.            "
         },
         {
-            image: '/work5.jpg',
-            text: 'Card 2 Text',
+            image: '/dest/araku.jpeg',
+            text: 'Araku & Vizag:',
+            desc:"From mountains to the sea, your wedding story unfolds"            
         },
-        {
-            image: '/work6.jpg',
-            text: 'Card 2 Text',
-        },
+       
         // Add more cards as needed
     ];
     const images = [
@@ -74,7 +82,7 @@ export default function page() {
                                 </div>
                                 <p className="text-white text-base inset-0 flex flex-col items-center justify-center space-y-3 absolute text-center ">
                                     <div className="text-3xl">{card.text}</div>
-                                    <div className="font-semibold text-xl w-11/12">Magnificient, Breathtaking Iconic</div>
+                                    <div className="font-semibold text-xl w-11/12">{card.desc}</div>
 
                                 </p>
                             </div>

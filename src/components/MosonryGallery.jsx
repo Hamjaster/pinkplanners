@@ -20,7 +20,7 @@ export const MansoryGallery = () => {
     "/gallery (12).jpg",
     "/gallery (13).jpg",
     "/gallery (14).jpg",
-    "/gallery (15).jpg",
+
     "/gallery (20).jpg",
     "/gallery (16).jpg",
     "/gallery (17).jpg",

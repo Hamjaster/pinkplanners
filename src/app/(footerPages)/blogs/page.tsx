@@ -9,12 +9,12 @@ import { GenCarousel } from '../../../utils';
 import CTA from '../../../components/CTA';
 import { Metadata } from 'next'
 import Link from 'next/link'
+import third from './images/3.jpg'
 
 export const metadata: Metadata = {
     title: 'Blogs',
     description: 'Discover what we offer for your needs. Your questions - our answers',
 }
-
 const BlogPage = () => {
     const blogPosts = [
         {
@@ -34,7 +34,7 @@ const BlogPage = () => {
         {
             title: 'Wedding Destinations',
             date: 'Wedding Destinations in South India',
-            img: "./work5.jpg",
+            img:'./blog4.jpg' ,
             to: "/blog-Wedding-Destinations"
             // Add other details as needed
         },
@@ -88,7 +88,7 @@ const BlogPage = () => {
                             
                             <div
                             key={index}
-                            className={`${index % 3 === 0 ? 'col-span-2' : 'col-span-1'
+                            className={`${index  === 2 ? 'w-[1250px]' : ' '
                         } rounded-lg overflow-hidden cursor-pointer sm:hover:-translate-y-5 duration-500    transition-all  bg-white shadow-md`}
                         >
                                 
@@ -104,6 +104,7 @@ const BlogPage = () => {
                                         {/* Add more details or buttons as needed */}
                                     </div>
                                 </Link>
+                               
                             </div>
                         ))}
                     </div>

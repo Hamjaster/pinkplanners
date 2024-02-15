@@ -80,10 +80,7 @@ export default function page() {
                        </ImageListItem>
                        <ImageListItem>
                        <Image src={w5} alt='kasn'/>
-                       </ImageListItem>
-                       <ImageListItem>
-                       <Image src={w6} alt='kasn'/>
-                       </ImageListItem>
+                       </ImageListItem> 
                        <ImageListItem>
                        <Image src={w7} alt='kasn'/>
                        </ImageListItem>
@@ -99,9 +96,7 @@ export default function page() {
                        <ImageListItem>
                        <Image src={w11} alt='kasn'/>
                        </ImageListItem>
-                       <ImageListItem>
-                       <Image src={w12} alt='kasn'/>
-                       </ImageListItem>
+                      
                     </ImageList>
                 </Box>
 
