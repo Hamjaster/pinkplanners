@@ -22,7 +22,7 @@ export default function page() {
         {
             image: '/dest/goa.jpg',
             text: 'Goa',
-            desc:"Beachside vows, Goa's magic flows          "
+            desc:"Beachside vows, Goa's magic flows  "
         },
         {
             image: '/dest/udai.jpeg',
@@ -38,12 +38,12 @@ export default function page() {
         {
             image: '/dest/pond.jpeg',
             text: 'Pondicherry',
-            desc:"Fairytale affirm in French Riviera's embrace.            "
+            desc:"Fairytale affirm in French Riviera's embrace.   "
         },
         {
             image: '/dest/araku.jpeg',
             text: 'Araku & Vizag:',
-            desc:"From mountains to the sea, your wedding story unfolds"            
+            desc:"From mountains to the sea, your wedding story unfolds"            
         },
        
         // Add more cards as needed
