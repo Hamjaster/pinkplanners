@@ -73,8 +73,8 @@ export default function Navbar() {
                 <div onClick={() => setshow(false)} className="absolute cursor-pointer top-4 right-4">
                     <AiOutlineClose />
                 </div>
-                <div className='cursor-pointer' onClick={() => moveBy('/')}>Home</div>
-                <div className='cursor-pointer' onClick={() => moveBy('/about')}>About</div>
+
+                <div className='cursor-pointer' onClick={() => moveBy('/events')}>Events</div>
                 <div className='cursor-pointer' onClick={() => moveBy('/gallery')}>Gallery</div>
                 <div className='cursor-pointer' onClick={() => moveBy('/destinations')}>Destinations</div>
                 <div className='cursor-pointer' onClick={() => moveBy('/blogs')}>Journals</div>
@@ -82,7 +82,14 @@ export default function Navbar() {
             </div>
             {/* Mobile nav */}
             <div className={`bg-white shadow-lg text-black py-5 transition-all lg:hidden w-full flex px-12 flex-row bg-transparent items-center justify-between`}>
-                <span className='text-3xl font-bold'>Logo</span>
+            <Link href={'/'}>
+                <Image
+                    src={logo}
+                    width={100}
+                    height={100}
+                    alt="Picture of the author"
+                />
+                </Link>
                 <span onClick={() => setshow(true)} className='text-3xl cursor-pointer'><VscMenu /></span>
             </div>
 

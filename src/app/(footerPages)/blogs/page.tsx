@@ -13,29 +13,29 @@ import Link from 'next/link'
 export const metadata: Metadata = {
     title: 'Blogs',
     description: 'Discover what we offer for your needs. Your questions - our answers',
-  }
-  
+}
+
 const BlogPage = () => {
     const blogPosts = [
         {
             title: 'Traditional wedding',
             date: 'Traditional South Indian Wedding Rituals',
             img: "./work3.jpg",
-            to:"/blog-traditional"
+            to: "/blog-traditional"
             // Add other details as needed
         },
         {
             title: 'Innovative wedding',
             date: 'Innovative Wedding Entertainment Ideas',
             img: "./work4.jpg",
-            to:"blog-Innnovative    "
+            to: "blog-Innnovative    "
             // Add other details as needed
         },
         {
             title: 'Wedding Destinations',
             date: 'Wedding Destinations in South India',
             img: "./work5.jpg",
-            to:"/blog-Wedding-Destinations"
+            to: "/blog-Wedding-Destinations"
             // Add other details as needed
         },
         // {
@@ -85,24 +85,25 @@ const BlogPage = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
                         {blogPosts.map((post, index) => (
+                            
                             <div
-                                key={index}
-                                className={`${index % 3 === 0 ? 'col-span-2' : 'col-span-1'
-                                    } rounded-lg overflow-hidden cursor-pointer sm:hover:-translate-y-5 duration-500    transition-all  bg-white shadow-md`}
-                            >
-                           <Link href={post.to}>
+                            key={index}
+                            className={`${index % 3 === 0 ? 'col-span-2' : 'col-span-1'
+                        } rounded-lg overflow-hidden cursor-pointer sm:hover:-translate-y-5 duration-500    transition-all  bg-white shadow-md`}
+                        >
+                                
+                                <Link href={post.to}>
 
-                                <div style={{
-                                    backgroundImage: `url(${post.img})`
-                                }} className=" bg-cover flex saturate-50 flex-col  bg-center h-72">
-                                    <div className='p-6 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent'>
-
-                                        <h3 className="text-2xl sm:text-3xl text-white font-semibold mb-2">{post.title}</h3>
-                                        <p className="text-gray-200 mb-4">{post.date}</p>
+                                    <div style={{
+                                        backgroundImage: `url(${post.img})`
+                                    }} className=" bg-cover flex saturate-50 flex-col  bg-center h-72">
+                                        <div className='p-6 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-transparent'>
+                                            <h3 className="text-2xl sm:text-3xl text-white font-semibold mb-2">{post.title}</h3>
+                                            <p className="text-gray-200 mb-4">{post.date}</p>
+                                        </div>
+                                        {/* Add more details or buttons as needed */}
                                     </div>
-                                    {/* Add more details or buttons as needed */}
-                                </div>
-                           </Link>
+                                </Link>
                             </div>
                         ))}
                     </div>
