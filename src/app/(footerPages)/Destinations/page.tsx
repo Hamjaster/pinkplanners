@@ -4,6 +4,20 @@ import Navbar from '../../../components/NavbarWhite'
 import { GenCarousel } from '../../../utils'
 import Link from 'next/link'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
+import d1 from './1.jpg'
+import d2 from './2.jpg'
+import d3 from './3.jpg'
+import d4 from './4.jpg'
+import d5 from './5.jpg'
+import d6 from './6.jpg'
+import d7 from './7.jpg'
+import d8 from './8.jpg'
+import d9 from './9.jpg'
+import Box from '@mui/material/Box';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import Image from 'next/image'
+
 export default function page() {
   const images = [
     "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"
@@ -21,7 +35,7 @@ export default function page() {
         <div className='text-2xl font-light'>Where every details spark joy</div>
       </div>
       {/** bullet points  */}
-      <div className='justify-center shadow-lg rounded-2xl border-4 border-gray-900 p-6 m-8 mx-10 align-middle flex'>
+      <div className='justify-centerspace-y-6 shadow-2xl rounded-2xl border-4 p-8   md:text-xl font my-10 mx-10 align-middle flex'>
        <div className='space-y-6 md:text-xl font'>
        <li>Pick Your Perfect Place: Choose from a variety of beautiful destinations like beaches, historic sites, or
           lush landscapes</li>
@@ -41,18 +55,44 @@ export default function page() {
         </li>
        </div>
       </div>{/** bullet points --end */}
-     <center>
-     <img src='/work1.jpg' />
-     </center>
+     
      <div className='my-7'>
-            <section className="bg-[#f3f4f6] dark:bg-gray-900">
-                <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-24 lg:px-6">
-                    <div className="mx-auto max-w-screen-sm text-center">
-                        <h2 className="mb-8 text-4xl tracking-tight  font-extrabold leading-tight text-gray-900 dark:text-white">Reach out to us and begin your journey toward your perfect day. </h2>
-                        <Link href={"/contact"} className="border border-black text-white hover:bg-black hover:text-white transition-all font-medium text-lg px-9 py-2.5 mr-2 mb-2 ">Start Planning Today</Link>
-                    </div>
-                </div>
-            </section>
+              
+            <div className='m-7'>
+
+                <Box >
+                    <ImageList variant="masonry" cols={3} gap={8}>
+                       <ImageListItem>
+                       <Image src={d1} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d2} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d3} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d4} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d5} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d6} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d7} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d8} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={d9} alt='kasn'/>
+                       </ImageListItem>
+                    </ImageList>
+                </Box>
+
+            </div>
         </div>
     </>
   )

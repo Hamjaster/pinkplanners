@@ -5,6 +5,22 @@ import { GenCarousel } from '../../../utils'
 import Link from 'next/link'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
+import w1 from './1.jpg'
+import w2 from './2.jpg'
+import w3 from './3.jpg'
+import w4 from './4.jpg'
+import w5 from './5.jpg'
+import w6 from './6.jpg'
+import w7 from './7.jpg'
+import w8 from './8.jpg'
+import w9 from './9.jpg'
+import w10 from './10.jpg'
+import w11 from './11.jpg'
+import w12 from './12.jpg'
+import Box from '@mui/material/Box';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import Image from 'next/image'
 
 export const metadata: Metadata = {
     title: 'Customised Weddings',
@@ -29,7 +45,7 @@ export default function page() {
             </div>
             {/** bullet points  */}
             <div className='justify-center m-8 mx-10 align-middle flex'>
-                <div className='space-y-6 shadow-lg rounded-2xl border-4 p-8 border-gray-900  md:text-xl font'>
+                <div className='space-y-6 shadow-2xl rounded-2xl border-4 p-8   md:text-xl font'>
                     <li>Tailored wedding planning services to reflect your unique love story</li>
                     <li>Expert team of planners and designers dedicated to bringing your vision to life</li>
                     <li>Customized services for venue selection, décor design, catering, and
@@ -43,19 +59,54 @@ export default function page() {
                     </li>
                 </div>
             </div>{/** bullet points --end */}
-            <center>
-                <img src='/work1.jpg' />
-            </center>
+           
             <div className='my-7'>
-                <section className="bg-[#f3f4f6] dark:bg-gray-900">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-24 lg:px-6">
-                        <div className="mx-auto max-w-screen-sm text-center">
-                            <h2 className="mb-8 text-4xl tracking-tight  font-extrabold leading-tight text-gray-900 dark:text-white">RContact us today to start planning your dream wedding! </h2>
-                            <Link href={"/contact"} className="border border-black text-white hover:bg-black hover:text-white transition-all font-medium text-lg px-9 py-2.5 mr-2 mb-2 ">Click to Begin Your Journey</Link>
-                        </div>
-                    </div>
-                </section>
+              
+            <div className='m-7'>
+
+                <Box >
+                    <ImageList variant="masonry" cols={3} gap={8}>
+                       <ImageListItem>
+                       <Image src={w1} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w2} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w3} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w4} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w5} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w6} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w7} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w8} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w9} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w10} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w11} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={w12} alt='kasn'/>
+                       </ImageListItem>
+                    </ImageList>
+                </Box>
+
             </div>
+        </div>
         </>
     )
 }

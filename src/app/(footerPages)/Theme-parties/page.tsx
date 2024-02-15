@@ -5,12 +5,34 @@ import { GenCarousel } from '../../../utils'
 import Link from 'next/link'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
+import Box from '@mui/material/Box';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+    import one  from './images/1.jpg'
+    import t2 from './images/2.jpg'
+    import t3 from './images/3.jpg'
+    import t4 from './images/4.jpg'
+    import t5 from './images/5.jpg'
+    import t6 from './images/6.jpg'
+    import t7 from './images/7.jpg'
+    import t8 from './images/8.jpg'
+    import t9 from './images/9.jpg'
+    import t10 from './images/10.jpg'
+import Image from 'next/image'
+
+
+const itemData = [
+    {
+        img: './images/1.jpg',
+        title: 'Coffee table',
+    },
+];
 
 export const metadata: Metadata = {
     title: 'Wedding theme parties',
     description: 'Discover the perfect theme party ideas for your dream wedding at our website.',
-  }
-  
+}
+
 export default function page() {
     const images = [
         "/work1.jpg", "/work2.jpg", "/work3.jpg", "/work4.jpg", "/work5.jpg", "/work6.jpg", "/work7.jpg", "/work8.jpg"
@@ -28,7 +50,7 @@ export default function page() {
                 <div className='text-2xl font-light'>Where every details spark joy</div>
             </div>
             {/** bullet points  */}
-            <div className='justify-center shadow-lg rounded-2xl border-4 border-gray-900 p-6 m-8 mx-10 align-middle flex'>
+            <div className='justify-center space-y-6 shadow-2xl rounded-2xl border-4 p-8 m-10  md:text-xl font align-middle flex'>
                 <div className='space-y-6 md:text-xl font'>
                     <li>Bachelor's Bash Bollywood Night: An evening filled with Bollywood glitz and glamour for the groom and his friends
                         to dance the night away</li>
@@ -52,18 +74,44 @@ export default function page() {
                     </li>
                 </div>
             </div>{/** bullet points --end */}
-            <center>
-                <img src='/work1.jpg' />
-            </center>
-            <div className='my-7'>
-                <section className="bg-[#f3f4f6] dark:bg-gray-900">
-                    <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-24 lg:px-6">
-                        <div className="mx-auto max-w-screen-sm text-center">
-                            <h2 className="mb-8 text-4xl tracking-tight  font-extrabold leading-tight text-gray-900 dark:text-white">Add extra excitement and charm to each stage of the wedding celebrations </h2>
-                            <Link href={"/contact"} className="border border-black text-white hover:bg-black hover:text-white transition-all font-medium text-lg px-9 py-2.5 mr-2 mb-2 ">Make your guest talk</Link>
-                        </div>
-                    </div>
-                </section>
+           
+            <div className='m-7'>
+
+                <Box >
+                    <ImageList variant="masonry" cols={3} gap={8}>
+                       <ImageListItem>
+                       <Image src={one} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t2} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t3} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t4} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t5} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t6} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t7} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t8} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t9} alt='kasn'/>
+                       </ImageListItem>
+                       <ImageListItem>
+                       <Image src={t10} alt='kasn'/>
+                       </ImageListItem>     
+                    </ImageList>
+                </Box>
+
             </div>
         </>
     )

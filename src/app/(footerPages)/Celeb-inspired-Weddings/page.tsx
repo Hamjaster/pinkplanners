@@ -28,7 +28,7 @@ export default function page() {
             </div>
             {/** bullet points  */}
             <div className='justify-center m-8 mx-10 align-middle flex'>
-                <div className='space-y-6 shadow-lg rounded-2xl border-4 p-8 border-gray-900  md:text-xl font'>
+                <div className='space-y-6 shadow-2xl rounded-2xl border-4 p-8   md:text-xl font'>
                     <li>Personalized Red Carpet Experience: Enjoy the elegance of Hollywood's red carpet events with tailored
 décor and floral arrangements designed to match your unique style.
 </li>
