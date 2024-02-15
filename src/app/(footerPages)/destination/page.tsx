@@ -17,7 +17,7 @@ export default function page() {
         {
             image: '/dest/kerala.jpg',
             text: 'Kerala ',
-            desc:"Whispers of 'I do' in God's own land.            "
+            desc:"Whispers of 'I do' in God's own land.    "
         },
         {
             image: '/dest/goa.jpg',
