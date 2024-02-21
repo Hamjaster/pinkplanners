@@ -80,34 +80,34 @@ export default function page() {
                 <Box >
                     <ImageList variant="masonry" cols={3} gap={8}>
                        {/* <ImageListItem>
-                       <Image src={one} alt='kasn'/>
+                       <img src={one} alt='kasn'/>
                        </ImageListItem> */}
                        <ImageListItem>
-                       <Image src={t2} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F1.jpg?alt=media&token=1c6be21e-07ec-4d6b-84e2-89c144f04cc0"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t3} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F10.jpg?alt=media&token=ff8578df-3fac-4dc9-84ba-3b811f73f183"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t4} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F2.jpg?alt=media&token=bd431994-5326-4751-b413-cb84b19d82fb"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t5} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F3.jpg?alt=media&token=2ff05d9f-4661-477d-99e9-2f93ae041e58"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t6} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F4.jpg?alt=media&token=0129605a-088f-4847-8791-a0daf0645903"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t7} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F6.jpg?alt=media&token=caa270c1-b326-489e-a7b2-2917613b576c"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t8} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F7.jpg?alt=media&token=2ca43253-bf66-48e7-a24f-6125034f3770"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t9} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F8.jpg?alt=media&token=c408a475-5128-458f-b814-08f65b2a1e3f"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={t10} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftheme-parties%2F9.jpg?alt=media&token=10e8b6ba-47df-4baa-a37b-30970e7734ba"} alt='kasn'/>
                        </ImageListItem>     
                     </ImageList>
                 </Box>

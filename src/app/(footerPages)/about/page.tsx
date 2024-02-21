@@ -64,19 +64,19 @@ export default function page() {
 
     const Journals = [
         {
-            title: 'Journal Title 1',
-            image: './work1.jpg', // Replace with your image URL
-            link: '/blog/1', // Replace with your blog link
-        },
-        {
-            title: 'Journal Title 2',
-            image: './work2.jpg', // Replace with your image URL
-            link: '/blog/2', // Replace with your blog link
-        },
-        {
-            title: 'Journal Title 3',
+            title: 'Traditional weedings',
             image: './work4.jpg', // Replace with your image URL
-            link: '/blog/3', // Replace with your blog link
+            link: 'F/blog-traditional', // Replace with your blog link
+        },
+        {
+            title: 'Innovative weedings',
+            image: './work2.jpg', // Replace with your image URL
+            link: '/blog-Innnovative', // Replace with your blog link
+        },
+        {
+            title: 'Weeding destinations',
+            image: './work4.jpg', // Replace with your image URL
+            link: '/blog-Wedding-Destinations', // Replace with your blog link
         },
     ];
 
@@ -142,12 +142,12 @@ export default function page() {
 
                 {/* Image Section */}
                 <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-                    <Image
+                    <img
                         width={0}
                         height={0}
                         sizes="100vw"
                         style={{ width: '100%', height: 'auto' }}
-                        src="/work3.jpg" // Replace with your image path
+                        src="https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fwork3.jpg?alt=media&token=d9a86904-8667-42c9-8d80-a1b570da6f2b" // Replace with your image path
                         alt="About Us"
                         className="w-full h-auto rounded-lg shadow-lg"
                     />

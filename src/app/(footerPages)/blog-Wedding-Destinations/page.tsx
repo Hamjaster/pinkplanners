@@ -50,13 +50,13 @@ export default function page() {
             {destinations[0].description}
             </p>
             <center>
-              <Image
-                    src={kerala}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fkerala.jpg?alt=media&token=c9248102-173a-4cf0-a737-cd2de2805cf3"}
                     className=''
                     alt="Picture of the author"
                 />
 
-            </center>
+            </center> 
           </div>
         </div>
         <div className="col-span-1 sm:col-span-2 ">
@@ -66,8 +66,8 @@ export default function page() {
             {destinations[1].description}
             </p>
             <center>
-              <Image
-                    src={udaipur}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fudaipur.jpg?alt=media&token=71a1d03e-a211-4a79-8845-d0db3e277774"}
                     className='mt-20'
                     alt="Picture of the author"
                 />
@@ -84,8 +84,8 @@ export default function page() {
             {destinations[2].description}
             </p>
             <center>
-              <Image
-                    src={coorg}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fcoorg.jpg?alt=media&token=71611828-3251-45d4-a62e-9f7256efb336"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -100,8 +100,8 @@ export default function page() {
               {destinations[3].description}
             </p>
             <center>
-              <Image
-                    src={goa}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fgoa.jpg?alt=media&token=bcef258d-8602-4d61-a557-bb08c210f844"}
                     className='md:h-[460px] md:w-[600px]'
                     alt="Picture of the author"
                 />
@@ -119,8 +119,8 @@ export default function page() {
             {destinations[4].description}
             </p>
             <center>
-              <Image
-                    src={pond}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fpond.jpg?alt=media&token=c06c49e2-a47d-498e-9c8a-34f26a903832"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -135,8 +135,8 @@ export default function page() {
             {destinations[5].description}
             </p>
             <center>
-              <Image
-                    src={munar}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblog-traditional-destinations%2Fmunar.jpg?alt=media&token=f7f90b4a-c069-41cc-88c8-097079405b14"}
                     className=''
                     alt="Picture of the author"
                 />

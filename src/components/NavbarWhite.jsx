@@ -35,11 +35,11 @@ export default function Navbar() {
             <div className={`transition-all z-50 fixed shadow-lg hidden lg:flex duration-300 w-full text-md bg-transparent bg-white text-black space-x-4 flex-row justify-evenly py-6 items-center `}>
 
                 <Link href={'/'}>
-                <Image
-                    src={logo}
-                    width={100}
-                    height={100}
-                    alt="Picture of the author"
+                <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FLogo.png?alt=media&token=cb36dd7a-0bb0-4370-bfd7-1bbc50a4d169"}
+                    width={120}
+                    height={120}
+                    alt="logo"
                 />
                 </Link>
 

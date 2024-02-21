@@ -67,36 +67,39 @@ export default function page() {
                 <Box >
                     <ImageList variant="masonry" cols={3} gap={8}>
                        <ImageListItem>
-                       <Image src={w1} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F1.jpg?alt=media&token=52ee6e93-43c2-40a2-8d61-a4aea90794c6"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w2} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F10.jpg?alt=media&token=45f5638b-94bb-4fdb-bade-ede7a5bd16f6"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w3} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F11.jpg?alt=media&token=29ef1f9a-a589-4402-b576-02a337728ffa"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w4} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F12.jpg?alt=media&token=ff7f55dc-b659-4d41-9bd9-6339628a5dba"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w5} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F2.jpg?alt=media&token=42f83233-72d8-4658-ace9-7a47c346dc61"} alt='kasn'/>
                        </ImageListItem> 
                        <ImageListItem>
-                       <Image src={w7} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F3.jpg?alt=media&token=4abfb27b-ea7c-4fbd-8651-93b73182ab93"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w8} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F4.jpg?alt=media&token=7f7ac6f9-7644-41f0-90eb-21996cd65a11"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w9} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F5.jpg?alt=media&token=93be345f-7aa5-4560-9321-3e01601cbb21"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w10} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F6.jpg?alt=media&token=88033dee-3ce1-4580-92a8-f3ea959c4db6"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={w11} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F7.jpg?alt=media&token=49076491-790e-49b1-aeb3-16609175d12f"} alt='kasn'/>
                        </ImageListItem>
-                      
+                       <ImageListItem>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fcustom-weedings%2F8.jpg?alt=media&token=e4e531a7-7767-44f7-b629-6a4a39396f44"} alt='kasn'/>
+                       </ImageListItem>
+     
                     </ImageList>
                 </Box>
 

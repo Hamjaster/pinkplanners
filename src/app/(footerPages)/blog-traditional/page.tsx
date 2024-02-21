@@ -55,8 +55,8 @@ export default function page() {
              {descriptions[0]}
             </p>
             <center>
-              <Image
-                    src={muhurtham}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftraadiotional-blog%2Fmuhurtham.jpg?alt=media&token=4b5cd01f-bd37-48c3-bb57-9efd09dbf1d4"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -71,8 +71,8 @@ export default function page() {
             {descriptions[1]}
             </p>
             <center>
-              <Image
-                    src={dhanam}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftraadiotional-blog%2Fdhanam.jpg?alt=media&token=de486c79-56f1-4bab-90b1-c92a5c0d3394"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -86,8 +86,8 @@ export default function page() {
              {descriptions[4]}
             </p>
             <center>
-              <Image
-                    src={sutra}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftraadiotional-blog%2Fsutra.jpg?alt=media&token=61fcf27a-edee-49a4-8c58-11bb5cb5a458"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -105,8 +105,8 @@ export default function page() {
              {descriptions[2]} 
             </p>
             <center>
-              <Image
-                    src={garlands}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftraadiotional-blog%2Fgarlands.jpg?alt=media&token=e70dd212-a7de-4eae-b388-66b644a6f78a"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -121,8 +121,8 @@ export default function page() {
               {descriptions[3]}
             </p>
             <center>
-              <Image
-                    src={steps}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Ftraadiotional-blog%2Fsteps.jpg?alt=media&token=ce3c1746-d53b-4a6b-851b-78dae92a39fc"}
                     className=''
                     alt="Picture of the author"
                 />

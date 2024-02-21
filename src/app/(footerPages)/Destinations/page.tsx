@@ -63,31 +63,31 @@ export default function page() {
                 <Box >
                     <ImageList variant="masonry" cols={3} gap={8}>
                        <ImageListItem>
-                       <Image src={d1} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F1.jpg?alt=media&token=7e88cf2f-7ac1-4ffa-8a47-552fb3fa485c"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d2} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F2.jpg?alt=media&token=63c6518a-98aa-4b1e-a154-e436923be5c7"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d3} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F3.jpg?alt=media&token=13fdce40-af78-406d-b1e1-2b675a9acd92"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d4} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F4.jpg?alt=media&token=5784da45-7c67-40b6-90ae-d2f52e9fe751"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d5} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F5.jpg?alt=media&token=78d0ee37-6571-48e0-8e8e-169154607b22"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d6} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F6.jpg?alt=media&token=90347d9e-dc75-4334-a9d7-c7061efb7c0a"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d7} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F7.jpg?alt=media&token=29933e66-227c-4d50-861e-8ce7e089c38b"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d8} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F8.jpg?alt=media&token=a70f8619-7b88-47c4-85b1-75f0eea13d5c"} alt='kasn'/>
                        </ImageListItem>
                        <ImageListItem>
-                       <Image src={d9} alt='kasn'/>
+                       <img src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2FDestination-theme%2F9.jpg?alt=media&token=f521d717-bfcd-453a-be53-8b7f4287ccd0"} alt='kasn'/>
                        </ImageListItem>
                     </ImageList>
                 </Box>

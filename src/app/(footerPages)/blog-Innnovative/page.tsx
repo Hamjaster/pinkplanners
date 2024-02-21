@@ -47,8 +47,8 @@ export default function page() {
             {destinations[0].description}
             </p>
             <center>
-              <Image
-                    src={photoboth}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblogs-innovatve%2Fphotoboth.jpg?alt=media&token=3f807c96-99da-4f4a-8029-e249c7eeef7b"}
                     className='h-[660px] w-[400px]'
                     alt="Picture of the author"
                 />
@@ -63,8 +63,8 @@ export default function page() {
             {destinations[1].description}
             </p>
             <center>
-              <Image
-                    src={live}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblogs-innovatve%2Flive.jpg?alt=media&token=d8d251af-2850-4e44-ac69-39b48c4b56bb"}
                     className='mt-20'
                     alt="Picture of the author"
                 />
@@ -81,8 +81,8 @@ export default function page() {
             {destinations[2].description}
             </p>
             <center>
-              <Image
-                    src={games}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblogs-innovatve%2Fgames.jpg?alt=media&token=86b44dc9-72d1-46c5-af80-15895b7109e0"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -97,8 +97,8 @@ export default function page() {
               {destinations[4].description}
             </p>
             <center>
-              <Image
-                    src={suprise}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblogs-innovatve%2Fsuprise.jpg?alt=media&token=efaccece-cde4-49f4-b15b-8f2c4a3171a6"}
                     className=''
                     alt="Picture of the author"
                 />
@@ -115,8 +115,8 @@ export default function page() {
             {destinations[3].description}
             </p>
             <center>
-              <Image
-                    src={dance}
+              <img
+                    src={"https://firebasestorage.googleapis.com/v0/b/mern-estate-9bf09.appspot.com/o/diamol%2Fblogs-innovatve%2Fdance.jpg?alt=media&token=502c42da-9a77-48c2-9eea-17b7a6580622"}
                     className=''
                     alt="Picture of the author"
                 />
