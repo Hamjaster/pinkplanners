@@ -4,7 +4,7 @@ import { Arizonia } from 'next/font/google'
 import CTA from '../../../components/CTA'
 const dancing = Arizonia({ subsets: ['latin'], weight: ['400'] })
 import { Metadata } from 'next'
-import muhurtham from './images/muhurtham.jpg'
+// import muhurtham from './images/muhurtham.jpg'
 import sutra from  './images/sutra.jpg'
 import steps from './images/steps.jpg'
 import garlands from './images/garlands.jpg'
